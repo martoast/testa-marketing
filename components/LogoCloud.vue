@@ -11,15 +11,15 @@
           </div>
           </div>
           <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-            <img class="max-h-12 w-full object-contain object-left" src="/calimax.svg" alt="Calimax" width="105" height="48" />
-            <img class="max-h-12 w-full object-contain object-left" src="/Coca-Cola_logo.svg" alt="Chevron" width="104" height="48" />
-            <img class="max-h-12 w-full object-contain object-left" src="/caliente.svg" alt="Coppel" width="140" height="48" />
-            <img class="max-h-16 w-1/2 object-contain object-left" src="/ford.svg" alt="Transistor" width="158" height="48" />
+            <img class="max-h-12 w-1/2 lg:w-full object-contain object-left" src="/calimax.svg" alt="Calimax-logo" width="105" height="48" />
+            <img class="max-h-12 w-1/2 lg:w-full object-contain object-left" src="/Coca-Cola_logo.svg" alt="Cocacola-logo" width="104" height="48" />
+            <img class="max-h-12 w-full object-contain object-left" src="/caliente.svg" alt="Caliente-logo" width="140" height="48" />
+            <img class="max-h-16 w-1/2 object-contain object-left" src="/ford.svg" alt="Form-lgoo" width="158" height="48" />
 
-            <img class="max-h-8 w-1/2 object-contain object-left" src="/smart.svg" alt="Coppel" />
-            <img class="max-h-18 w-1/2 object-contain object-left" src="/tecate.svg" alt="Tecate" />
-            <img class="max-h-16 w-1/2 object-contain object-left" src="/chevron.svg" alt="Transistor" width="158" height="48" />
-            <img class="max-h-16 w-1/2 object-contain object-left" src="/711.svg" alt="Transistor" width="158" height="48" />
+            <img class="max-h-8 w-3/4 lg:w-1/2 object-contain object-left" src="/smart.svg" alt="Coppel-logo" />
+            <img class="max-h-18 w-3/4 lg:w-1/2 object-contain object-left" src="/tecate.svg" alt="Tecate-logo" />
+            <img class="max-h-16 w-1/2 object-contain object-left" src="/chevron.svg" alt="Chevron-logo" width="158" height="48" />
+            <img class="max-h-16 w-1/2 object-contain object-left" src="/711.svg" alt="711-logo" width="158" height="48" />
 
           </div>
         </div>
