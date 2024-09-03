@@ -1,6 +1,12 @@
 <template>
   <div>
     <Hero/>
+    <Features/>
+    <LogoCloud/>
+    <Team/>
+    <Locations/>
+    <Contact/>
+    <Footer/>
   </div>
 </template>
 

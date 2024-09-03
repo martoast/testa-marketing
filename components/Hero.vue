@@ -20,7 +20,7 @@
                   <img src="/TESTA_SELLO CIRCULAR_COLOR NEG.svg" style="height: 100px; width: 100px;" alt="testa-logo">
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
-                  <PopoverButton class="focus-ring-inset relative inline-flex items-center justify-center rounded-md bg-secondary p-2 text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white">
+                  <PopoverButton class="focus-ring-inset relative inline-flex items-center justify-center rounded-md bg-secondary p-2 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white">
                     <span class="absolute -inset-0.5" />
                     <span class="sr-only">Open main menu</span>
                     <Bars3Icon class="h-6 w-6" aria-hidden="true" />
@@ -69,8 +69,7 @@
                     </a>
                   </div>
                   <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Investigación de Mercados</h1>
-                  <p class="mt-3 text-base text-gray-200 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">El COVID-19 cambió al mundo de los negocios y el marketing se convirtió en la respuesta a los nuevos retos. ¿Estás listo? Nosotros sí.</p>
-                  <p class="mt-8 text-base font-semibold text-white sm:mt-10">Confiado por</p>
+                  <p class="mt-3 text-base text-white sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Más de 20 años de excelencia en entender mercados y crear estrategias efectivas. Transformamos datos en soluciones para tu negocio.</p>                  <p class="mt-8 text-base font-semibold text-white sm:mt-10">Confiado por</p>
                 <div class="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                   <div class="flex flex-wrap items-start justify-between">
                     <div class="flex justify-center px-1">
@@ -150,10 +149,10 @@
   
   const navigation = [
     { name: 'Home', href: '/#hero' },
-    { name: 'Servicios', href: '#' },
+    { name: 'Servicios', href: '#features' },
     { name: 'Nosotros', href: '#' },
     { name: 'Blog', href: '#' },
-    { name: 'Contacto', href: '#' }
+    { name: 'Contacto', href: '/#contact' }
   ]
   
   const social = [
