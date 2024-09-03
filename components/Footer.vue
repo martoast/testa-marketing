@@ -74,9 +74,9 @@
     { name: 'Consultoría y Marketing', href: '/#features' },
   ],
   empresa: [
-    { name: 'Nosotros', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Súmate al equipo', href: '#' },
+    { name: 'Nosotros', href: '/#nosotros' },
+    { name: 'Blog', href: '/#blog' },
+    { name: 'Súmate al equipo', href: '/#contact' },
   ],
   contact: [
     { name: 'Ciudad de México', href: '/#locations' },

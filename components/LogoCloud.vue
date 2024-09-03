@@ -6,17 +6,21 @@
             <h2 class="text-3xl font-bold tracking-tight text-gray-900">Algunos de nuestros clientes</h2>
             <p class="mt-6 text-lg leading-8 text-gray-600">15 años en el mercado y las marcas que hemos atendido son el respaldo que habla de nuestra experiencia y confianza.</p>
             <div class="mt-8 flex items-center gap-x-6">
-            <a href="#" class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Solicitar cotización</a>
-            <a href="#" class="text-sm font-semibold text-gray-900">Contáctanos <span aria-hidden="true">&rarr;</span></a>
+            <a href="/#hero" class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Solicitar cotización</a>
+            <a href="/#contact" class="text-sm font-semibold text-gray-900">Contáctanos <span aria-hidden="true">&rarr;</span></a>
           </div>
           </div>
           <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/img/logos/tuple-logo-gray-900.svg" alt="Tuple" width="105" height="48" />
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/img/logos/reform-logo-gray-900.svg" alt="Reform" width="104" height="48" />
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg" alt="SavvyCal" width="140" height="48" />
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/img/logos/laravel-logo-gray-900.svg" alt="Laravel" width="136" height="48" />
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/img/logos/transistor-logo-gray-900.svg" alt="Transistor" width="158" height="48" />
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/img/logos/statamic-logo-gray-900.svg" alt="Statamic" width="147" height="48" />
+            <img class="max-h-12 w-full object-contain object-left" src="/calimax.svg" alt="Calimax" width="105" height="48" />
+            <img class="max-h-12 w-full object-contain object-left" src="/Coca-Cola_logo.svg" alt="Chevron" width="104" height="48" />
+            <img class="max-h-12 w-full object-contain object-left" src="/caliente.svg" alt="Coppel" width="140" height="48" />
+            <img class="max-h-16 w-1/2 object-contain object-left" src="/ford.svg" alt="Transistor" width="158" height="48" />
+
+            <img class="max-h-8 w-1/2 object-contain object-left" src="/smart.svg" alt="Coppel" />
+            <img class="max-h-18 w-1/2 object-contain object-left" src="/tecate.svg" alt="Tecate" />
+            <img class="max-h-16 w-1/2 object-contain object-left" src="/chevron.svg" alt="Transistor" width="158" height="48" />
+            <img class="max-h-16 w-1/2 object-contain object-left" src="/711.svg" alt="Transistor" width="158" height="48" />
+
           </div>
         </div>
       </div>

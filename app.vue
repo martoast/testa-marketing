@@ -4,7 +4,9 @@
     <Features/>
     <LogoCloud/>
     <Team/>
+    <Testimonials/>
     <Locations/>
+    <Blog/>
     <Contact/>
     <Footer/>
   </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="relative overflow-hidden bg-secondary">
+    <div id="hero" class="relative overflow-hidden bg-secondary">
       <div class="hidden sm:absolute sm:inset-0 sm:block" aria-hidden="true">
         <svg class="absolute bottom-0 right-0 mb-48 translate-x-1/2 transform text-gray-500 lg:top-0 lg:mb-0 lg:mt-28 xl:translate-x-0 xl:transform-none" width="364" height="384" viewBox="0 0 364 384" fill="none">
           <defs>
@@ -62,9 +62,9 @@
               <div class="px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
                 <div>
                   <div class="hidden sm:mb-4 sm:flex sm:justify-center lg:justify-start">
-                    <a href="#features" class="flex items-center rounded-full bg-gray-500 p-1 pr-2 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base">
+                    <a href="/#contact" class="flex items-center rounded-full bg-gray-500 p-1 pr-2 text-white hover:text-gray-200 sm:text-base lg:text-sm xl:text-base">
                       <span class="rounded-full bg-primary px-3 py-0.5 text-sm font-semibold leading-5 text-white">Súmate al equipo</span>
-                      <span class="ml-4 text-sm">Descubre Más</span>
+                      <span class="ml-4 text-sm">Contactanos</span>
                       <ChevronRightIcon class="ml-2 h-5 w-5 text-gray-500" aria-hidden="true" />
                     </a>
                   </div>
@@ -73,15 +73,18 @@
                 <div class="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                   <div class="flex flex-wrap items-start justify-between">
                     <div class="flex justify-center px-1">
-                      <img class="h-9 sm:h-10" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="Tuple" />
+                      <img class="h-9 sm:h-10" src="/ford.svg" alt="Tuple" />
                     </div>
+
                     <div class="flex justify-center px-1">
-                      <img class="h-9 sm:h-10" src="https://tailwindui.com/img/logos/workcation-logo-white.svg" alt="Workcation" />
+                      <img class="h-9 sm:h-10" src="/Coca-Cola_logo.svg" alt="StaticKit" />
+                    </div>
+
+                    <div class="flex justify-center px-1">
+                      <img class="h-9 sm:h-10" src="/caliente.svg" alt="Workcation" />
                     </div>
                     
-                    <div class="flex justify-center px-1">
-                      <img class="h-9 sm:h-10" src="https://tailwindui.com/img/logos/transistor-logo-white.svg" alt="StaticKit" />
-                    </div>
+                    
                   </div>
                 </div>
                 </div>
@@ -150,8 +153,8 @@
   const navigation = [
     { name: 'Home', href: '/#hero' },
     { name: 'Servicios', href: '#features' },
-    { name: 'Nosotros', href: '#' },
-    { name: 'Blog', href: '#' },
+    { name: 'Nosotros', href: '/#nosotros' },
+    { name: 'Blog', href: '/#blog' },
     { name: 'Contacto', href: '/#contact' }
   ]
   
