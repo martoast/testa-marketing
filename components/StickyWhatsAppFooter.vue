@@ -1,5 +1,6 @@
 <template>
-    <div class="fixed bottom-0 left-0 right-0 bg-gray-200 f py-2 shadow-lg" v-show="isVisible">
+  <Transition name="fade">
+    <div v-if="isVisible" class="fixed bottom-0 left-0 right-0 bg-gray-200 py-2 shadow-lg">
       <div class="container mx-auto px-4">
         <div class="flex justify-center items-center">
           <div class="w-full md:w-7/12 flex items-center">
@@ -23,14 +24,58 @@
         </div>
       </div>
     </div>
-  </template>
+  </Transition>
+</template>
+
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const isVisible = ref(false)
+const heroHeight = ref(0)
+const footerTop = ref(0)
+
+const closeFooter = () => {
+  isVisible.value = false
+}
+
+const handleScroll = () => {
+  const scrollPosition = window.scrollY + window.innerHeight
   
-  <script setup>
-  import { ref } from 'vue'
-  
-  const isVisible = ref(true)
-  
-  const closeFooter = () => {
+  if (window.scrollY > heroHeight.value && scrollPosition < footerTop.value) {
+    isVisible.value = true
+  } else {
     isVisible.value = false
   }
-  </script>
+}
+
+onMounted(() => {
+  const heroElement = document.getElementById('hero')
+  const footerElement = document.getElementById('footer')
+
+  if (heroElement) {
+    heroHeight.value = heroElement.offsetHeight
+  }
+
+  if (footerElement) {
+    footerTop.value = footerElement.offsetTop
+  }
+
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
+</script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

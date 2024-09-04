@@ -114,7 +114,7 @@
           </div>
         </main>
       </div>
-      <VideoModal :is-open="isModalOpen" @close="closeModal" video-id="dQw4w9WgXcQ" />
+      <VideoModal :is-open="isModalOpen" @close="closeModal" video-id="IFdkhzbNjnE" />
     </div>
   </template>
   

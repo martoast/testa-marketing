@@ -40,7 +40,7 @@
           </div>
   
           <div class="relative -mx-4 mt-10 lg:mt-0" aria-hidden="true">
-            <img class="relative mx-auto" width="490" src="https://tailwindui.com/img/features/feature-example-2.png" alt="Investigación de mercados" />
+            <img class="relative mx-auto" width="490" src="/servicio2.png" alt="Investigación de mercados" />
           </div>
         </div>
   
@@ -67,7 +67,7 @@
             </div>
   
             <div class="relative -mx-4 mt-10 lg:col-start-1 lg:mt-0">
-              <img class="relative mx-auto" width="490" src="https://tailwindui.com/img/features/feature-example-1.png" alt="Servicios especializados" />
+              <img class="relative mx-auto" width="490" src="/servicio.png" alt="Servicios especializados" />
             </div>
           </div>
         </div>
