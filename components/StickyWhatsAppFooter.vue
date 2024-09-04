@@ -1,6 +1,6 @@
 <template>
   <Transition name="fade">
-    <div v-if="isVisible" class="fixed bottom-0 left-0 right-0 bg-gray-200 py-2 shadow-lg">
+    <div v-if="isVisible && !isClosed" class="fixed bottom-0 left-0 right-0 bg-gray-200 py-2 shadow-lg">
       <div class="container mx-auto px-4">
         <div class="flex justify-center items-center">
           <div class="w-full md:w-7/12 flex items-center">
@@ -31,11 +31,12 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const isVisible = ref(false)
+const isClosed = ref(false)
 const heroHeight = ref(0)
 const footerTop = ref(0)
 
 const closeFooter = () => {
-  isVisible.value = false
+  isClosed.value = true
 }
 
 const handleScroll = () => {
@@ -59,6 +60,7 @@ onMounted(() => {
   if (footerElement) {
     footerTop.value = footerElement.offsetTop
   }
+
 
   window.addEventListener('scroll', handleScroll)
 })
