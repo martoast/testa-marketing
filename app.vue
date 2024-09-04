@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Hero/>
+    <!-- <Hero/> -->
+    <Hero2/>
     <Features/>
     <LogoCloud/>
     <Team/>
@@ -9,6 +10,7 @@
     <Blog/>
     <Contact/>
     <Footer/>
+    <StickyWhatsAppFooter/>
   </div>
 </template>
 
