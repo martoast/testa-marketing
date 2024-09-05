@@ -9,12 +9,12 @@
 <script setup>
   
   useServerSeoMeta({
-  title: 'Fullstack Labs - Software Development Experts',
-  ogTitle: 'Fullstack Labs - Software Development Experts',
-  author: 'Fullstack Labs',
+  title: 'Testa Marketing - Investigación de Mercados',
+  ogTitle: 'Testa Marketing - Investigación de Mercados',
+  author: 'Alex Martos',
   charset: 'utf-8',
-  description: "Expert software development and consulting services for web, mobile, and emerging technologies.",
-  ogDescription: "Expert software development and consulting services for web, mobile, and emerging technologies.",
+  description: "Transformamos datos en soluciones para tu negocio. Entendemos mercados y creamos estrategias efectivas para impulsar tu éxito.",
+  ogDescription: "Transformamos datos en soluciones para tu negocio. Entendemos mercados y creamos estrategias efectivas para impulsar tu éxito.",
   robots: 'index, follow',
   googleSiteVerification: '',
   appleMobileWebAppCapable: 'yes',
