@@ -8,7 +8,7 @@
         <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <article v-for="post in posts" :key="post.id" class="flex flex-col items-start justify-between">
             <div class="relative w-full">
-              <img :src="post.imageUrl" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+              <img :src="post.imageUrl" alt="" class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-fill sm:aspect-[2/1] lg:aspect-[3/2]" />
               <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
             </div>
             <div class="max-w-xl">
@@ -48,7 +48,7 @@
     {
       id: 1,
       title: '¿Qué es el muestreo de snowball?',
-      href: '/blog/articulos/que-es-el-muestreo-de-snowball',
+      href: '/blog/que-es-el-muestreo-de-snowball',
       description: 'Si buscas distribuir una encuesta entre personas con las características que buscas y pedirles que lo distribuyan a otras personas con perfiles similares, puedes hacer previamente un muestreo de snowball.',
       imageUrl: 'https://testamarketing.com/storage/images/que-es-el-muestreo-de-snowball-small.jpg',
       date: 'May 23, 2023',
@@ -62,7 +62,7 @@
     {
       id: 2,
       title: 'Las notas de Don Lorenzo',
-      href: '/blog/articulos/las-notas-de-don-lorenzo',
+      href: '/blog/las-notas-de-don-lorenzo',
       description: 'Conocí a Don Lorenzo Servitje hace varios años en una reunión de COPARMEX, tiempo después logré una entrevista privada con él donde le platiqué sobre un libro infantil que estaba haciendo y que lo estaba invitando a que escribiera el prólogo.',
       imageUrl: 'https://testamarketing.com/storage/images/lorenzo-small.jpg',
       date: 'Apr 30, 2023',
@@ -76,7 +76,7 @@
     {
       id: 3,
       title: '¿Qué es Net Promoter Score?',
-      href: '/blog/articulos/que-es-net-promoter-score',
+      href: '/blog/que-es-net-promoter-score',
       description: 'Uno de los errores que suelen cometer las empresas o dueños de negocios pequeños es el desconocimiento del Net Promoter Score, también conocido como "NPS".',
       imageUrl: 'https://testamarketing.com/storage/images/que-es-net-promoter-score-small.jpg',
       date: 'Mar 27, 2022',

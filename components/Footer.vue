@@ -64,14 +64,14 @@
   
   const navigation = {
   servicios: [
-    { name: 'Encuestas Cara a Cara (CAPI)', href: '/#features' },
-    { name: 'Encuesta Telefónica (CATI)', href: '/#features' },
-    { name: 'Encuesta Online', href: '/#features' },
-    { name: 'Mystery Shopper', href: '/#features' },
-    { name: 'Entrevistas a Profundidad', href: '/#features' },
-    { name: 'Grupos Focales', href: '/#features' },
-    { name: 'Estudios de Gabinete', href: '/#features' },
-    { name: 'Consultoría y Marketing', href: '/#features' },
+    { name: 'Encuestas Cara a Cara (CAPI)', href: '/#servicios' },
+    { name: 'Encuesta Telefónica (CATI)', href: '/#servicios' },
+    { name: 'Encuesta Online', href: '/#servicios' },
+    { name: 'Mystery Shopper', href: '/#servicios' },
+    { name: 'Entrevistas a Profundidad', href: '/#servicios' },
+    { name: 'Grupos Focales', href: '/#servicios' },
+    { name: 'Estudios de Gabinete', href: '/#servicios' },
+    { name: 'Consultoría y Marketing', href: '/#servicios' },
   ],
   empresa: [
     { name: 'Nosotros', href: '/#nosotros' },
