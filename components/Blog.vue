@@ -50,13 +50,13 @@
       title: '¿Qué es el muestreo de snowball?',
       href: '/blog/que-es-el-muestreo-de-snowball',
       description: 'Si buscas distribuir una encuesta entre personas con las características que buscas y pedirles que lo distribuyan a otras personas con perfiles similares, puedes hacer previamente un muestreo de snowball.',
-      imageUrl: 'https://testamarketing.com/storage/images/que-es-el-muestreo-de-snowball-small.jpg',
+      imageUrl: '/blog1.webp',
       date: 'May 23, 2023',
       datetime: '2023-05-23',
       author: {
         name: 'Ariosto Manrique',
         href: '#',
-        imageUrl: 'https://testamarketing.com/storage/images/Ariosto-ManriqueV3.jpg'
+        imageUrl: '/ariosto-profile.webp'
       },
     },
     {
@@ -64,13 +64,13 @@
       title: 'Las notas de Don Lorenzo',
       href: '/blog/las-notas-de-don-lorenzo',
       description: 'Conocí a Don Lorenzo Servitje hace varios años en una reunión de COPARMEX, tiempo después logré una entrevista privada con él donde le platiqué sobre un libro infantil que estaba haciendo y que lo estaba invitando a que escribiera el prólogo.',
-      imageUrl: 'https://testamarketing.com/storage/images/lorenzo-small.jpg',
+      imageUrl: '/blog2.webp',
       date: 'Apr 30, 2023',
       datetime: '2023-04-30',
       author: {
         name: 'Ariosto Manrique',
         href: '#',
-        imageUrl: 'https://testamarketing.com/storage/images/Ariosto-ManriqueV3.jpg'
+        imageUrl: '/ariosto-profile.webp'
       },
     },
     {
@@ -78,13 +78,13 @@
       title: '¿Qué es Net Promoter Score?',
       href: '/blog/que-es-net-promoter-score',
       description: 'Uno de los errores que suelen cometer las empresas o dueños de negocios pequeños es el desconocimiento del Net Promoter Score, también conocido como "NPS".',
-      imageUrl: 'https://testamarketing.com/storage/images/que-es-net-promoter-score-small.jpg',
+      imageUrl: '/blog3.webp',
       date: 'Mar 27, 2022',
       datetime: '2022-03-27',
       author: {
         name: 'Ariosto Manrique',
         href: '#',
-        imageUrl: 'https://testamarketing.com/storage/images/Ariosto-ManriqueV3.jpg'
+        imageUrl: '/ariosto-profile.webp'
       },
     },
     // Add more posts here...

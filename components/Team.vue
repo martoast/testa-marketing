@@ -40,32 +40,32 @@ const people = [
   {
     name: 'Ariosto Manrique',
     role: 'Director General',
-    imageUrl: 'https://testamarketing.com/storage/images/Ariosto-ManriqueV3.jpg',
+    imageUrl: '/ariosto-profile.webp',
     cvUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Viviana Juárez',
     role: 'Administración',
-    imageUrl: 'https://testamarketing.com/storage/images/Equipo2.jpg',
+    imageUrl: '/team4.webp',
     linkedinUrl: '#',
   },
   {
     name: 'José María Verdaguer',
     role: 'Partner - España',
-    imageUrl: 'https://testamarketing.com/storage/images/Testa-Marketing-Espa%C3%B1a.jpg',
+    imageUrl: '/team2.webp',
     linkedinUrl: '#',
   },
   {
     name: 'Moises Espitia',
     role: 'Análisis',
-    imageUrl: 'https://testamarketing.com/storage/images/89735405-4d0c-49a1-9b11-3be2265a6f5a.jpg',
+    imageUrl: '/team1.webp',
     linkedinUrl: '#',
   },
   {
     name: 'Francisco Estrada',
     role: 'Consultor',
-    imageUrl: 'https://testamarketing.com/storage/images/imagen1.jpg',
+    imageUrl: '/team3.webp',
     linkedinUrl: '#',
   },
 ]

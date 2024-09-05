@@ -31,7 +31,7 @@
               <p>"Aunque el último comentario de Don Lorenzo sí me dejó pensando. ¿la suerte se presenta así nomás, se construye… o ambas?"</p>
             </blockquote>
             <figcaption class="mt-6 flex gap-x-4">
-              <img class="h-6 w-6 flex-none rounded-full bg-gray-50" src="https://testamarketing.com/storage/images/Ariosto-ManriqueV3.jpg" alt="Don Lorenzo Servitje" />
+              <img class="h-6 w-6 flex-none rounded-full bg-gray-50" src="/ariosto-profile.webp" alt="Don Lorenzo Servitje" />
               <div class="text-sm leading-6"><strong class="font-semibold text-gray-900">Ariosto Manrique</strong> – Autor del artículo</div>
             </figcaption>
           </figure>

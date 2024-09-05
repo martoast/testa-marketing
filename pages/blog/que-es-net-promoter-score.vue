@@ -24,7 +24,7 @@
               <p>"Las agencias de investigación de mercados recomiendan realizar encuestas Net Promoter Score porque son un método eficaz para medir la satisfacción del cliente y darle seguimiento a las respuestas."</p>
             </blockquote>
             <figcaption class="mt-6 flex gap-x-4">
-              <img class="h-6 w-6 flex-none rounded-full bg-gray-50" src="https://testamarketing.com/storage/images/Ariosto-ManriqueV3.jpg" alt="NPS Image" />
+              <img class="h-6 w-6 flex-none rounded-full bg-gray-50" src="/ariosto-profile.webp" alt="NPS Image" />
               <div class="text-sm leading-6"><strong class="font-semibold text-gray-900">Ariosto Manrique</strong> – Autor del artículo</div>
             </figcaption>
           </figure>
