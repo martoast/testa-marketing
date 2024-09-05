@@ -40,7 +40,13 @@
           </div>
   
           <div class="relative -mx-4 mt-10 lg:mt-0" aria-hidden="true">
-            <img class="relative mx-auto" width="490" src="/servicio2.webp" alt="Investigación de mercados" />
+            <NuxtImg 
+            src="/servicio2.webp" 
+            alt="Investigación de mercados" 
+                class="relative mx-auto"
+                width="490"
+                height="414"
+              />
           </div>
         </div>
   
@@ -67,7 +73,13 @@
             </div>
   
             <div class="relative -mx-4 mt-10 lg:col-start-1 lg:mt-0">
-              <img class="relative mx-auto" width="490" src="/servicio.webp" alt="Servicios especializados" />
+              <NuxtImg 
+            src="/servicio.webp" 
+            alt="Servicios especializados" 
+                class="relative mx-auto"
+                width="490"
+                height="414"
+              />
             </div>
           </div>
         </div>

@@ -55,7 +55,12 @@
             <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
               <button @click="openModal" type="button" class="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-hover focus:ring-offset-2">
                 <span class="sr-only">Ver nuestro video informativo</span>
-                <img class="w-full" src="/main.webp" alt="" />
+                <NuxtImg 
+                  src="/main.webp" 
+                  alt="Main image" 
+                  width="450"
+                  height="300"
+                />
                 <span class="absolute inset-0 flex h-full w-full items-center justify-center" aria-hidden="true">
                   <svg class="h-20 w-20 text-hover" fill="currentColor" viewBox="0 0 84 84">
                     <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />
