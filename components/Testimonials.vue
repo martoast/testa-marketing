@@ -25,7 +25,13 @@
                   <p>"{{ testimonial.quote }}"</p>
                 </blockquote>
                 <figcaption class="mt-6 flex items-center gap-x-4">
-                  <img v-if="testimonial.imageUrl" class="h-10 w-auto" :src="testimonial.imageUrl" :alt="testimonial.company + ' logo'" />
+                  <NuxtImg 
+                    v-if="testimonial.imageUrl"
+                    :src="testimonial.imageUrl"
+                    :alt="testimonial.company + ' logo'"
+                    class="h-10 w-auto"
+                    preset="avatar"
+                  />
                   <div>
                     <div class="font-semibold">{{ testimonial.company }}</div>
                     <div class="text-gray-600">{{ testimonial.position }}</div>

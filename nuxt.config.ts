@@ -14,6 +14,14 @@ export default defineNuxtConfig({
           fit: 'cover',
           quality: '80',
         }
+      },
+      'avatar': {
+        modifiers: {
+          format: 'webp',
+          fit: 'cover',
+          width: 40,
+          height: 40,
+        }
       }
     }
   },

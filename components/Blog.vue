@@ -13,6 +13,8 @@
                   alt=""
                   class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-fill sm:aspect-[2/1] lg:aspect-[3/2]"
                   preset="blog-cover"
+                  height="175"
+                  width="300"
                 />
               <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
             </div>
@@ -30,7 +32,12 @@
                 <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{{ post.description }}</p>
               </div>
               <div class="relative mt-8 flex items-center gap-x-4">
-              <img :src="post.author.imageUrl" alt="" class="h-10 w-10 rounded-full bg-gray-100" />
+                <NuxtImg 
+                  :src="post.author.imageUrl"
+                  alt=""
+                  class="h-10 w-10 rounded-full bg-gray-100"
+                  preset="avatar"
+                />
               <div class="text-sm leading-6">
                 <p class="font-semibold text-gray-900">
                   <a :href="post.author.href">
