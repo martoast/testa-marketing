@@ -55,7 +55,6 @@
             <div class="space-y-1 px-2 pb-3 pt-2">
               <a v-for="item in navigation" :key="item.name" :href="item.href" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">{{ item.name }}</a>
             </div>
-            <a href="#contact" class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-primary hover:bg-gray-100">Contacto</a>
           </div>
         </PopoverPanel>
       </transition>
