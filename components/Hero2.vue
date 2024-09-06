@@ -60,6 +60,7 @@
                   alt="Main image" 
                   width="450"
                   height="300"
+                  preset="blog-cover"
                 />
                 <span class="absolute inset-0 flex h-full w-full items-center justify-center" aria-hidden="true">
                   <svg class="h-20 w-20 text-hover" fill="currentColor" viewBox="0 0 84 84">
