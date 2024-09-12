@@ -6,7 +6,7 @@
             <a href="#">
               <span class="sr-only">Testa Market Research</span>
               <NuxtImg 
-                src="/TESTA_LOGO CENTRAL COMPLETO_COLOR.svg"
+                src="/testa-main-logo.svg"
                 alt="testa-logo"
                 class="h-16 w-auto sm:h-20"
                 height="64"
@@ -38,7 +38,7 @@
             <div class="flex items-center justify-between px-5 pt-4">
               <div>
                 <NuxtImg 
-                    src="/TESTA_LOGO CENTRAL COMPLETO_COLOR.svg"
+                    src="/testa-main-logo.svg"
                     alt="testa-logo"
                     class="h-8 w-auto"
                     height="32"
