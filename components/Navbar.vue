@@ -5,13 +5,12 @@
           <div class="flex w-full items-center justify-between md:w-auto">
             <a href="#">
               <span class="sr-only">Testa Market Research</span>
-              <NuxtImg 
+              <img 
                 src="/testa-main-logo.svg"
                 alt="testa-logo"
                 class="h-16 w-auto sm:h-20"
                 height="64"
-                sizes="sm:80px 64px"
-                />
+              />
             </a>
             <div class="-mr-2 flex items-center md:hidden">
               <PopoverButton class="relative inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-hover">
@@ -37,12 +36,12 @@
           <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
             <div class="flex items-center justify-between px-5 pt-4">
               <div>
-                <NuxtImg 
-                    src="/testa-main-logo.svg"
-                    alt="testa-logo"
-                    class="h-8 w-auto"
-                    height="32"
-                    />
+                <img 
+                  src="/testa-main-logo.svg"
+                  alt="testa-logo"
+                  class="h-8 w-auto"
+                  height="32"
+                />
               </div>
               <div class="-mr-2">
                 <PopoverButton class="relative inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-hover">
