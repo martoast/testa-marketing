@@ -69,9 +69,11 @@ async function createAccountAndContact(formData) {
   if (response.ok && data.data && data.data.length > 0) {
     return data.data;
   } else {
-    throw new Error('Failed to create account and contact');
+    console.error('Zoho API Error Response:', data); // Enhanced Logging
+    throw new Error(data.message || 'Failed to create account and contact');
   }
 }
+
 
 async function ensureValidAccessToken() {
   const currentTime = Date.now();
