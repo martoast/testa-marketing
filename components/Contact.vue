@@ -227,7 +227,7 @@ const submitForm = async () => {
           firstName: form.value.firstName,
           lastName: form.value.lastName,
           email: form.value.email,
-          fuenteDePosibleClientes: 'Website',
+          fuenteDePosibleClientes: 'Nuevo cliente',
           areaDeCampo: form.value.service,
           empresa: form.value.company,
           mobile: form.value.phone,
