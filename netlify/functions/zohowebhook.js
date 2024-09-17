@@ -7,7 +7,6 @@ let tokenExpiration = null;
 
 exports.handler = async (event, context) => {
   try {
-    
     // Parse the request body
     const payload = JSON.parse(event.body);
     const formData = payload.formData;
@@ -15,15 +14,12 @@ exports.handler = async (event, context) => {
     // Ensure we have a valid access token
     await ensureValidAccessToken();
 
-    // First, check if the account exists or create a new one
-    const accountId = await getOrCreateAccount(formData);
-
-    // Now create the contact
-    const contactData = await createContact(formData, accountId);
+    // Create both account and contact in one API call
+    const createdData = await createAccountAndContact(formData);
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: 'Contact created successfully', contact: contactData }),
+      body: JSON.stringify({ message: 'Account and Contact created successfully', data: createdData }),
     };
   } catch (error) {
     console.error('Error:', error);
@@ -34,61 +30,17 @@ exports.handler = async (event, context) => {
   }
 };
 
-async function getOrCreateAccount(formData) {
-  const zohoApiBaseUrl = process.env.ZOHO_API_BASE_URL || 'https://www.zohoapis.com';
-  
-  // First, try to find the account
-  const searchResponse = await fetch(`${zohoApiBaseUrl}/crm/v2/Accounts/search?criteria=(Account_Name:equals:${encodeURIComponent(formData.accountName)})`, {
-    method: 'GET',
-    headers: {
-      'Authorization': `Zoho-oauthtoken ${accessToken}`,
-      'Content-Type': 'application/json',
-    },
-  });
-
-  const searchData = await searchResponse.json();
-
-  if (searchData.data && searchData.data.length > 0) {
-    // Account exists, return its ID
-    return searchData.data[0].id;
-  } else {
-    // Account doesn't exist, create a new one
-    const newAccountData = {
-      data: [
-        {
-          Account_Name: formData.accountName,
-          Industry: formData.industry,
-          Phone: formData.phone,
-        },
-      ],
-    };
-
-    const createResponse = await fetch(`${zohoApiBaseUrl}/crm/v2/Accounts`, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Zoho-oauthtoken ${accessToken}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(newAccountData),
-    });
-
-    const createData = await createResponse.json();
-
-    if (createData.data && createData.data.length > 0) {
-      return createData.data[0].details.id;
-    } else {
-      throw new Error('Failed to create account');
-    }
-  }
-}
-
-async function createContact(formData, accountId) {
+async function createAccountAndContact(formData) {
   const zohoApiBaseUrl = process.env.ZOHO_API_BASE_URL || 'https://www.zohoapis.com';
 
-  const zohoContactData = {
+  const zohoData = {
     data: [
       {
-        Account_Name: { id: accountId },
+        Account_Name: formData.accountName,
+        Industry: formData.industry,
+        Phone: formData.phone
+      },
+      {
         First_Name: formData.firstName,
         Last_Name: formData.lastName,
         Email: formData.email,
@@ -97,27 +49,27 @@ async function createContact(formData, accountId) {
         Empresa: formData.empresa,
         Mobile: formData.mobile,
         Title: formData.title,
-        Department: formData.department,
-      },
+        Department: formData.department
+      }
     ],
     trigger: ["workflow"]
   };
 
-  const response = await fetch(`${zohoApiBaseUrl}/crm/v2/Contacts`, {
+  const response = await fetch(`${zohoApiBaseUrl}/crm/v5/Accounts,Contacts`, {
     method: 'POST',
     headers: {
       'Authorization': `Zoho-oauthtoken ${accessToken}`,
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(zohoContactData),
+    body: JSON.stringify(zohoData),
   });
 
   const data = await response.json();
 
   if (response.ok && data.data && data.data.length > 0) {
-    return data.data[0].details;
+    return data.data;
   } else {
-    throw new Error('Failed to create contact');
+    throw new Error('Failed to create account and contact');
   }
 }
 
