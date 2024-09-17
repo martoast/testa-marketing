@@ -7,6 +7,7 @@ let tokenExpiration = null;
 
 exports.handler = async (event, context) => {
   try {
+    
     // Parse the request body
     const payload = JSON.parse(event.body);
     const formData = payload.formData;

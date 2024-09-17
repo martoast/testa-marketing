@@ -242,7 +242,7 @@ const submitForm = async () => {
         'Content-Type': 'application/json'
       };
 
-      const response = await fetch('/.netlify/functions/zohoWebhook', {
+      const response = await fetch('/.netlify/functions/zohowebhook', {
         method: 'POST',
         headers: headers,
         body: JSON.stringify(payload)
