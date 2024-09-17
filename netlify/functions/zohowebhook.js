@@ -7,28 +7,42 @@ let tokenExpiration = null;
 
 exports.handler = async (event, context) => {
   try {
+    // Log the incoming request for debugging
+    console.log('Received request:', event.body);
+
     // Parse the request body
     const payload = JSON.parse(event.body);
     const formData = payload.formData;
+
+    console.log('Form Data:', formData);
 
     // Ensure we have a valid access token
     await ensureValidAccessToken();
 
     // Step 1: Create the Account
     const accountData = await createAccount(formData);
+    console.log('Created Account:', accountData);
 
     // Step 2: Create the Contact linked to the Account
-    const contactData = await createContact(formData, accountData.id);
+    const contactData = await createContact(formData, accountData.details.id);
+    console.log('Created Contact:', contactData);
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: 'Account and Contact created successfully', account: accountData, contact: contactData }),
+      body: JSON.stringify({
+        message: 'Account and Contact created successfully',
+        account: accountData,
+        contact: contactData,
+      }),
     };
   } catch (error) {
     console.error('Error:', error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Internal Server Error', details: error.message }),
+      body: JSON.stringify({
+        error: 'Internal Server Error',
+        details: error.message,
+      }),
     };
   }
 };
@@ -39,24 +53,25 @@ async function createAccount(formData) {
   const zohoAccountData = {
     data: [
       {
-        Account_Name: formData.accountName,
+        Account_Name: formData.company, // Ensure this matches Zoho's field API name
         Industry: formData.industry,
-        Phone: formData.phone
-      }
+        Phone: formData.phone,
+      },
     ],
-    trigger: ["workflow"]
+    trigger: ['workflow'],
   };
 
   const response = await fetch(`${zohoApiBaseUrl}/crm/v5/Accounts`, {
     method: 'POST',
     headers: {
-      'Authorization': `Zoho-oauthtoken ${accessToken}`,
+      Authorization: `Zoho-oauthtoken ${accessToken}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(zohoAccountData),
   });
 
   const data = await response.json();
+  console.log('Zoho Account API Response:', data);
 
   if (response.ok && data.data && data.data.length > 0) {
     return data.data[0]; // Return the created Account object
@@ -83,22 +98,23 @@ async function createContact(formData, accountId) {
         Department: formData.department,
         City: formData.city,
         Comments: formData.comments,
-        Account_Name: accountId // Link Contact to Account
-      }
+        Account_Name: accountId, // Link Contact to Account using Account ID
+      },
     ],
-    trigger: ["workflow"]
+    trigger: ['workflow'],
   };
 
   const response = await fetch(`${zohoApiBaseUrl}/crm/v5/Contacts`, {
     method: 'POST',
     headers: {
-      'Authorization': `Zoho-oauthtoken ${accessToken}`,
+      Authorization: `Zoho-oauthtoken ${accessToken}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(zohoContactData),
   });
 
   const data = await response.json();
+  console.log('Zoho Contact API Response:', data);
 
   if (response.ok && data.data && data.data.length > 0) {
     return data.data[0]; // Return the created Contact object
@@ -111,12 +127,14 @@ async function createContact(formData, accountId) {
 async function ensureValidAccessToken() {
   const currentTime = Date.now();
   if (!accessToken || !tokenExpiration || currentTime >= tokenExpiration) {
+    console.log('Access token is missing or expired. Refreshing token...');
     await refreshAccessToken();
+  } else {
+    console.log('Access token is valid.');
   }
 }
 
 async function refreshAccessToken() {
-  // Retrieve the environment variables
   const clientId = process.env.ZOHO_CLIENT_ID;
   const clientSecret = process.env.ZOHO_CLIENT_SECRET;
   const refreshToken = process.env.ZOHO_REFRESH_TOKEN;
@@ -128,16 +146,19 @@ async function refreshAccessToken() {
   params.append('client_secret', clientSecret);
   params.append('grant_type', 'refresh_token');
 
+  console.log('Refreshing access token...');
+
   const response = await fetch(`${zohoAccountsUrl}/oauth/v2/token`, {
     method: 'POST',
     body: params,
   });
 
   const data = await response.json();
+  console.log('Zoho Token Refresh Response:', data);
 
   if (response.ok) {
     accessToken = data.access_token;
-    // Set token expiration to 50 minutes from now (10 minutes before the actual 1-hour expiration)
+    // Set token expiration to 50 minutes from now (10 minutes before actual expiration)
     tokenExpiration = Date.now() + 50 * 60 * 1000;
     console.log('Access token refreshed successfully.');
   } else {
