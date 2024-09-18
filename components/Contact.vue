@@ -12,7 +12,7 @@
               <div>
                 <dt class="sr-only">Calendly</dt>
                 <dd>
-                  <a class="underline" href="www.calendly.com/ariosto">www.calendly.com/ariosto</a>
+                  <NuxtLink class="underline" to="https://calendly.com/ariosto" target="_blank" external>www.calendly.com/ariosto</NuxtLink>
                 </dd>
               </div>
               <div class="mt-6">
