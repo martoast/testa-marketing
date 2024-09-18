@@ -75,7 +75,6 @@
   ],
   empresa: [
     { name: 'Nosotros', href: '/#nosotros' },
-    { name: 'Blog', href: '/#blog' },
     { name: 'Súmate al equipo', href: '/#contact' },
   ],
   contact: [

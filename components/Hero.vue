@@ -154,7 +154,6 @@
     { name: 'Home', href: '/#hero' },
     { name: 'Servicios', href: '#features' },
     { name: 'Nosotros', href: '/#nosotros' },
-    { name: 'Blog', href: '/#blog' },
     { name: 'Contacto', href: '/#contact' }
   ]
   

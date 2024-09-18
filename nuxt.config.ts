@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     format: ['webp', 'svg'],
     sizes: 'sm:100vw md:50vw lg:400px',
     presets: {
-      'blog-cover': {
+      'main-cover': {
         modifiers: {
           format: 'webp',
           fit: 'cover',

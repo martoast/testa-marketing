@@ -41,7 +41,7 @@
   
           <div class="relative -mx-4 mt-10 lg:mt-0" aria-hidden="true">
             <NuxtImg 
-            src="/servicio2.webp" 
+            src="/testa-equipo.webp" 
             alt="Investigación de mercados" 
                 class="relative mx-auto"
                 width="490"
@@ -74,7 +74,7 @@
   
             <div class="relative -mx-4 mt-10 lg:col-start-1 lg:mt-0">
               <NuxtImg 
-            src="/servicio.webp" 
+            src="/feature.webp" 
             alt="Servicios especializados" 
                 class="relative mx-auto"
                 width="490"

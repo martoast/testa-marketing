@@ -68,7 +68,6 @@
     { name: 'Home', href: '/#hero' },
     { name: 'Servicios', href: '/#servicios' },
     { name: 'Nosotros', href: '/#nosotros' },
-    { name: 'Blog', href: '/#blog' },
     { name: 'Contacto', href: '/#contact' },
   ]
   </script>

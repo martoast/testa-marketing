@@ -70,9 +70,9 @@ const people = [
     linkedinUrl: '#',
   },
   {
-    name: 'Francisco Estrada',
-    role: 'Consultor',
-    imageUrl: '/team3.webp',
+    name: 'Ariana Chan',
+    role: 'Operaciones',
+    imageUrl: '/ariana.webp',
     linkedinUrl: '#',
   },
 ]
