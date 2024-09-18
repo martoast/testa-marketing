@@ -14,7 +14,7 @@
         <div class="relative">
           <h2 class="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">Servicios</h2>
           <p class="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-500">
-            Nuestra ventaja es la capacidad de traducir las gráficas y números en estrategias efectivas para nuestros clientes. La variedad de sectores que hemos atendido durante 15 años hablan por nosotros y a continuación te comentamos sobre nuestros servicios.
+            Nuestra ventaja es la capacidad de traducir las gráficas y números en estrategias efectivas para nuestros clientes. La variedad de sectores que hemos atendido durante más de 20 años hablan por nosotros y a continuación te comentamos sobre nuestros servicios.
           </p>
         </div>
   

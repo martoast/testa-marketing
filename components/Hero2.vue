@@ -25,12 +25,11 @@
             </h1>
             <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Transformamos datos en soluciones para tu negocio. Entendemos mercados y creamos estrategias efectivas para impulsar tu éxito.</p>
             <div class="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left">
-              <p class="text-base font-medium text-gray-900">¿Te interesa una cotización? Contáctanos ahora.</p>
-              <form @submit.prevent="submitForm" class="mt-3 sm:flex">
-                <label for="email" class="sr-only">Email</label>
-                <input v-model="form.email" type="email" name="email" id="email" class="block w-full rounded-md border-gray-300 py-3 text-base placeholder-gray-500 shadow-sm focus:border-hover focus:ring-hover sm:flex-1" placeholder="Ingresa tu email" />
-                <button type="submit" class="mt-3 w-full rounded-md border border-transparent bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-hover focus:outline-none focus:ring-2 focus:ring-hover focus:ring-offset-2 sm:ml-3 sm:mt-0 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center">Solicitar Cotización</button>
-              </form>
+              <p class="text-base font-medium text-gray-900 mb-4">¿Te interesa una cotización? Contáctanos ahora.</p>
+              <a href="#contact">
+                <button type="submit" class="mt-3 w-full rounded-md border border-transparent bg-primary px-8 py-3 text-base font-medium text-white shadow-sm hover:bg-hover focus:outline-none focus:ring-2 focus:ring-hover focus:ring-offset-2 sm:ml-3 sm:mt-0 sm:inline-flex sm:w-auto sm:flex-shrink-0 sm:items-center">Solicitar Cotización</button>
+              </a>
+
               <AlertComponent
                 class="mt-3"
                 v-model:show="showAlert"
@@ -74,7 +73,7 @@
         </div>
       </main>
     </div>
-    <VideoModal :is-open="isModalOpen" @close="closeModal" video-id="IFdkhzbNjnE" />
+    <VideoModal :is-open="isModalOpen" @close="closeModal" video-id="lBjR3AXWNhM" />
   </div>
 </template>
 

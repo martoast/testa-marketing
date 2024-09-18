@@ -10,14 +10,16 @@
             </div>
             <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
               <div class="rounded-2xl bg-gray-50 p-10">
-                <h3 class="text-base font-semibold leading-7 text-gray-900">Ciudad de México</h3>
+                <h3 class="text-base font-semibold leading-7 text-gray-900">Tijuana B.C.</h3>
                 <address class="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
-                  <p>Calzada Mariano Escobedo 476, piso 12, int. 1200-B</p>
-                  <p>Colonia Anzures, Alcaldía Miguel Hidalgo</p>
-                  <p>Ciudad de México</p>
-                  <p>+52 (559) 417-5263</p>
+                  <p>Blvd. Agua Caliente 9955, piso 5</p>
+                  <p>Fraccionamiento Calete</p>
+                  <p>Edificio Torela Corporativo</p>
+                  <p>22044 Tijuana, B.C.</p>
+                  <p>+52 (664) 889-5909</p>
                   <p><a href="mailto:info@testamarketing.com" class="text-primary">info@testamarketing.com</a></p>
                 </address>
+                
               </div>
               <div class="rounded-2xl bg-gray-50 p-10">
                 <h3 class="text-base font-semibold leading-7 text-gray-900">Guadalajara</h3>
@@ -30,13 +32,12 @@
                 </address>
               </div>
               <div class="rounded-2xl bg-gray-50 p-10">
-                <h3 class="text-base font-semibold leading-7 text-gray-900">Tijuana B.C.</h3>
+                <h3 class="text-base font-semibold leading-7 text-gray-900">Ciudad de México</h3>
                 <address class="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
-                  <p>Blvd. Agua Caliente 9955, piso 5</p>
-                  <p>Fraccionamiento Calete</p>
-                  <p>Edificio Torela Corporativo</p>
-                  <p>22044 Tijuana, B.C.</p>
-                  <p>+52 (664) 889-5909</p>
+                  <p>Calzada Mariano Escobedo 476, piso 12, int. 1200-B</p>
+                  <p>Colonia Anzures, Alcaldía Miguel Hidalgo</p>
+                  <p>Ciudad de México</p>
+                  <p>+52 (559) 417-5263</p>
                   <p><a href="mailto:info@testamarketing.com" class="text-primary">info@testamarketing.com</a></p>
                 </address>
               </div>

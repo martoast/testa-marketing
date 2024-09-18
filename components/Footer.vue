@@ -3,10 +3,10 @@
       <h2 id="footer-heading" class="sr-only">Footer</h2>
       <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div class="space-y-4">
-            <img class="h-28" src="/testa-main-logo.svg" alt="Company name" />
+          <div class="space-y-4 text-center md:text-start">
+            <img class="h-28 mx-auto md:mx-0" src="/testa-main-logo.svg" alt="Company name" />
             <p class="text-sm leading-6 text-gray-600">Datos que inspiran, estrategias que transforman.</p>
-            <div class="flex space-x-6">
+            <div class="flex justify-center md:justify-start space-x-6">
               <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">{{ item.name }}</span>
                 <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />

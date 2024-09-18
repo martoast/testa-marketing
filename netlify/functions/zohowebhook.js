@@ -7,23 +7,18 @@ let tokenExpiration = null;
 
 exports.handler = async (event, context) => {
   try {
-    // Log the incoming request for debugging
     console.log('Received request:', event.body);
 
-    // Parse the request body
     const payload = JSON.parse(event.body);
     const formData = payload.formData;
 
     console.log('Form Data:', formData);
 
-    // Ensure we have a valid access token
     await ensureValidAccessToken();
 
-    // Step 1: Create the Account
     const accountData = await createAccount(formData);
     console.log('Created Account:', accountData);
 
-    // Step 2: Create the Contact linked to the Account
     const contactData = await createContact(formData, accountData.details.id);
     console.log('Created Contact:', contactData);
 
@@ -38,10 +33,10 @@ exports.handler = async (event, context) => {
   } catch (error) {
     console.error('Error:', error);
     return {
-      statusCode: 500,
+      statusCode: error.statusCode || 500,
       body: JSON.stringify({
-        error: 'Internal Server Error',
-        details: error.message,
+        error: error.message || 'Internal Server Error',
+        details: error.details || {},
       }),
     };
   }
@@ -53,7 +48,7 @@ async function createAccount(formData) {
   const zohoAccountData = {
     data: [
       {
-        Account_Name: formData.company, // Ensure this matches Zoho's field API name
+        Account_Name: formData.accountName,
         Industry: formData.industry,
         Phone: formData.phone,
       },
@@ -74,7 +69,7 @@ async function createAccount(formData) {
   console.log('Zoho Account API Response:', data);
 
   if (response.ok && data.data && data.data.length > 0) {
-    return data.data[0]; // Return the created Account object
+    return data.data[0];
   } else {
     console.error('Zoho API Error Response (Account):', data);
     throw new Error(data.message || 'Failed to create account');
@@ -98,7 +93,7 @@ async function createContact(formData, accountId) {
         Department: formData.department,
         City: formData.city,
         Comments: formData.comments,
-        Account_Name: accountId, // Link Contact to Account using Account ID
+        Account_Name: accountId,
       },
     ],
     trigger: ['workflow'],
@@ -117,7 +112,7 @@ async function createContact(formData, accountId) {
   console.log('Zoho Contact API Response:', data);
 
   if (response.ok && data.data && data.data.length > 0) {
-    return data.data[0]; // Return the created Contact object
+    return data.data[0];
   } else {
     console.error('Zoho API Error Response (Contact):', data);
     throw new Error(data.message || 'Failed to create contact');
@@ -138,7 +133,7 @@ async function refreshAccessToken() {
   const clientId = process.env.ZOHO_CLIENT_ID;
   const clientSecret = process.env.ZOHO_CLIENT_SECRET;
   const refreshToken = process.env.ZOHO_REFRESH_TOKEN;
-  const zohoAccountsUrl = process.env.ZOHO_ACCOUNTS_URL || 'https://accounts.zoho.com';
+  const zohoAccountsUrl = 'https://accounts.zoho.com';
 
   const params = new URLSearchParams();
   params.append('refresh_token', refreshToken);
@@ -158,8 +153,7 @@ async function refreshAccessToken() {
 
   if (response.ok) {
     accessToken = data.access_token;
-    // Set token expiration to 50 minutes from now (10 minutes before actual expiration)
-    tokenExpiration = Date.now() + 50 * 60 * 1000;
+    tokenExpiration = Date.now() + (data.expires_in * 1000);
     console.log('Access token refreshed successfully.');
   } else {
     console.error('Error refreshing access token:', data);

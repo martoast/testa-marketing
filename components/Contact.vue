@@ -10,11 +10,9 @@
             <p class="mt-3 text-lg leading-6 text-gray-500">Envíanos tus datos y nosotros nos pondremos en contacto contigo.</p>
             <dl class="mt-8 text-base text-gray-500">
               <div>
-                <dt class="sr-only">Dirección postal</dt>
+                <dt class="sr-only">Calendly</dt>
                 <dd>
-                  <p>Calzada Mariano Escobedo 476, piso 12, int. 1200-B</p>
-                  <p>Colonia Anzures, Alcaldía Miguel Hidalgo,</p>
-                  <p>Ciudad de México</p>
+                  <a class="underline" href="www.calendly.com/ariosto">www.calendly.com/ariosto</a>
                 </dd>
               </div>
               <div class="mt-6">

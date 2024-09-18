@@ -3,7 +3,7 @@
     <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
       <div class="max-w-2xl">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">El Equipo</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">Mucho talento se ha formado en nuestra empresa durante 15 años, aquí parte de nuestro equipo coordinador. A ellos se le suma más de 100 encuestadores en todo México.</p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Mucho talento se ha formado en nuestra empresa durante más de 20 años, aquí parte de nuestro equipo coordinador. A ellos se le suma más de 100 encuestadores en todo México.</p>
       </div>
       <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
         <li v-for="person in people" :key="person.name">
@@ -46,7 +46,7 @@
 const people = [
   {
     name: 'Ariosto Manrique',
-    role: 'Director General',
+    role: 'Director',
     imageUrl: '/ariosto-profile.webp',
     cvUrl: '#',
     linkedinUrl: '#',
@@ -59,7 +59,7 @@ const people = [
   },
   {
     name: 'José María Verdaguer',
-    role: 'Partner - España',
+    role: 'Country Manager (España)',
     imageUrl: '/team2.webp',
     linkedinUrl: '#',
   },
