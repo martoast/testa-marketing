@@ -12,12 +12,12 @@
         </div>
         <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
           <img 
-            class="h-12 w-auto object-contain"
+            class="h-12 w-auto object-contain p-1"
             src="/calimax.svg"
             alt="Calimax-logo"
           />
           <img 
-            class="h-12 w-auto object-contain"
+            class="h-12 w-auto object-contain p-1"
             src="/Coca-Cola_logo.svg"
             alt="Cocacola-logo"
           />
@@ -34,12 +34,12 @@
             alt="Caliente-logo"
           />
           <img 
-            class="h-12 w-auto object-contain"
+            class="h-12 w-auto object-contain p-1"
             src="/bachoco.svg"
             alt="bachoco-logo"
           />
           <img 
-            class="h-12 w-3/4 object-contain"
+            class="h-12 w-3/5 md:w-1/2 object-contain"
             src="/smart.svg"
             alt="smart-logo"
           />
