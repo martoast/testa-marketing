@@ -39,7 +39,7 @@
             alt="bachoco-logo"
           />
           <img 
-            class="h-12 w-3/5 md:w-1/2 object-contain"
+            class="h-12 w-3/4 md:w-1/2 object-contain"
             src="/smart.svg"
             alt="smart-logo"
           />
