@@ -43,15 +43,19 @@
   const emit = defineEmits(['update:modelValue']);
   
   const options = [
-    { value: "CAPI (Encuestas cara a cara)", label: "CAPI (Encuestas cara a cara)" },
-    { value: "CATI (Encuestas telefónicas)", label: "CATI (Encuestas telefónicas)" },
-    { value: "CAWI (Encuestas online)", label: "CAWI (Encuestas online)" },
-    { value: "Mystery Shopper", label: "Mystery Shopper" },
-    { value: "Entrevistas a Profundidad", label: "Entrevistas a Profundidad" },
-    { value: "Estudios de gabinete", label: "Estudios de Gabinete" },
-    { value: "Grupos Focales", label: "Grupos Focales" },
+    { value: "Encuestador", label: "CAPI (Encuestas cara a cara)" },
+    { value: "CATI", label: "CATI (Encuestas telefónicas)" },
+    { value: "CAWI", label: "CAWI (Encuestas vía web)" },
+    { value: "Mystery shopper", label: "Mystery shopper" },
+    { value: "Entrevista a profundidad", label: "Entrevista a profundidad" },
+    { value: "Análisis de gabinete", label: "Análisis de gabinete" },
+    { value: "Grupo focal", label: "Grupos focales / Triadas presenciales" },
+    { value: "Grupos focales / Triadas digitales", label: "Grupos focales / Triadas digitales" },
     { value: "Consultoría y Capacitación", label: "Consultoría y Capacitación" },
-    { value: "Otros", label: "Otros" }
+    { value: "Elaboración de mapas", label: "Elaboración de mapas" },
+    { value: "Maquila de encuestas a terceros", label: "Maquila de encuestas a terceros" },
+    { value: "Pruebas de productos", label: "Pruebas de productos" },
+    { value: "Reclutamiento para terceros", label: "Reclutamiento para terceros" }
   ];
   
   const isOpen = ref(false);

@@ -102,22 +102,22 @@
           
           <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
             <div>
-              <label for="company" class="block text-sm font-medium text-gray-700">Empresa</label>
+              <label for="empresa" class="block text-sm font-medium text-gray-700">Empresa</label>
               <input 
                 type="text" 
-                name="company" 
-                id="company" 
-                v-model="form.company"
+                name="empresa" 
+                id="empresa" 
+                v-model="form.empresa"
                 class="mt-1 block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"
                 required
               />
             </div>
             <div>
-              <label for="industry" class="block text-sm font-medium text-gray-700">Industria</label>
+              <label for="department" class="block text-sm font-medium text-gray-700">Industria</label>
               <select 
-                name="industry" 
-                id="industry" 
-                v-model="form.industry"
+                name="department" 
+                id="department" 
+                v-model="form.department"
                 class="mt-1 block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"
                 required
               >
@@ -182,12 +182,13 @@ const form = ref({
   lastName: '',
   email: '',
   phone: '',
-  company: '',
-  industry: '',
+  empresa: '',
+  department: '',
   city: '',
   areaDeCampo: [],
   comments: '',
 })
+
 
 const showAlert = ref(false)
 
@@ -207,18 +208,20 @@ const submitForm = async () => {
     try {
       const payload = {
         formData: {
-          accountName: form.value.company,
-          Department: form.value.industry,
+          accountName: form.value.empresa,
           firstName: form.value.firstName,
           lastName: form.value.lastName,
           email: form.value.email,
-          Fuente_de_posible_clientes: 'Nuevo cliente',
-          Área_de_campo: form.value.areaDeCampo,
-          empresa: form.value.company,
           mobile: form.value.phone,
-          title: '',
-          Mailing_city: form.value.city,
-          Description: form.value.comments
+          phone: form.value.phone,
+          empresa: form.value.empresa,
+          mailingCity: form.value.city,
+          estado: "-None-",
+          rea_de_campo: form.value.areaDeCampo,
+          description: form.value.comments,
+          title: 'title',
+          department: form.value.department,
+          fuenteDePosibleClientes: 'Nuevo cliente',
         }
       };
       
