@@ -153,7 +153,6 @@
               rows="4" 
               v-model="form.comments"
               class="mt-1 block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"
-              required
             ></textarea>
           </div>
           
