@@ -185,15 +185,22 @@ const form = ref({
   company: '',
   industry: '',
   city: '',
-  areaDeCampo: '',
+  areaDeCampo: [],
   comments: '',
 })
 
 const showAlert = ref(false)
 
 const validateForm = () => {
-  return Object.values(form.value).every(field => field.trim() !== '')
-}
+  return Object.entries(form.value).every(([key, value]) => {
+    if (key === 'areaDeCampo') {
+      return value.length > 0; // Check if at least one option is selected
+    } else if (typeof value === 'string') {
+      return value.trim() !== '';
+    }
+    return true; // For any other types of fields
+  });
+};
 
 const submitForm = async () => {
   if (validateForm()) {
@@ -202,41 +209,40 @@ const submitForm = async () => {
         formData: {
           accountName: form.value.company,
           Department: form.value.industry,
-          phone: form.value.phone,
           firstName: form.value.firstName,
           lastName: form.value.lastName,
           email: form.value.email,
           Fuente_de_posible_clientes: 'Nuevo cliente',
-          readecampo: form.value.areaDeCampo,
+          Área_de_campo: form.value.areaDeCampo,
           empresa: form.value.company,
           mobile: form.value.phone,
           title: '',
-          mailing_city: form.value.city,
-          comments: form.value.comments
+          Mailing_city: form.value.city,
+          Description: form.value.comments
         }
       };
       
       console.log(payload);
 
-      // const headers = {
-      //   'Content-Type': 'application/json'
-      // };
+      const headers = {
+        'Content-Type': 'application/json'
+      };
 
-      // const response = await fetch('/.netlify/functions/zohowebhook', {
-      //   method: 'POST',
-      //   headers: headers,
-      //   body: JSON.stringify(payload)
-      // });
+      const response = await fetch('/.netlify/functions/zohowebhook', {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(payload)
+      });
 
-      // const data = await response.json();
+      const data = await response.json();
 
-      // if (!response.ok) {
-      //   throw new Error(data.error || 'Network response was not ok');
-      // }
+      if (!response.ok) {
+        throw new Error(data.error || 'Network response was not ok');
+      }
 
-      // showAlert.value = true;
-      // // Reset form
-      // Object.keys(form.value).forEach(key => form.value[key] = '');
+      showAlert.value = true;
+      // Reset form
+      Object.keys(form.value).forEach(key => form.value[key] = '');
     } catch (error) {
       console.error('Error submitting form:', error);
       alert('Ocurrió un error al enviar tus datos. Por favor, inténtalo de nuevo.');
