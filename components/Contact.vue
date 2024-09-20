@@ -16,13 +16,6 @@
                 </dd>
               </div>
               <div class="mt-6">
-                <dt class="sr-only">Número de teléfono</dt>
-                <dd class="flex">
-                  <PhoneIcon class="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                  <span class="ml-3">+52 (55) 1234-5678</span>
-                </dd>
-              </div>
-              <div class="mt-3">
                 <dt class="sr-only">Correo electrónico</dt>
                 <dd class="flex">
                   <EnvelopeIcon class="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
