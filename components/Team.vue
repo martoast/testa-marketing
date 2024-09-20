@@ -79,7 +79,7 @@ const people = [
     name: 'Luis Carlos',
     role: 'Análisis',
     imageUrl: '/LuisCarlos.webp',
-    linkedinUrl: 'https://www.linkedin.com/in/ana-gonz%C3%A1lez-714917239',
+    linkedinUrl: '#',
   },
 ]
 </script>
