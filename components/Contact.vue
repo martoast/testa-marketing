@@ -142,26 +142,7 @@
                 required
               />
             </div>
-            <div>
-              <label for="service" class="block text-sm font-medium text-gray-700">Servicio</label>
-              <select 
-                name="service" 
-                id="service" 
-                v-model="form.service"
-                class="mt-1 block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"
-                required
-              >
-                <option value="" disabled>Seleccione un servicio</option>
-                <option value="Necesito más Información">Necesito más Información</option>
-                <option value="Otros">Otros</option>
-                <option value="Consultoría y Capacitación">Consultoría y Capacitación</option>
-                <option value="Encuestas">Encuestas (CAPI, CATI, CAWI)</option>
-                <option value="Mystery Shopper">Mystery Shopper</option>
-                <option value="Entrevistas a Profundidad">Entrevistas a Profundidad</option>
-                <option value="Estudios de gabinete">Estudios de Gabinete</option>
-                <option value="Grupos Focales">Grupos Focales</option>
-              </select>
-            </div>
+            <CustomSelect v-model="form.areaDeCampo"/>
           </div>
           
           <div>
@@ -204,8 +185,8 @@ const form = ref({
   company: '',
   industry: '',
   city: '',
-  service: '',
-  comments: ''
+  areaDeCampo: '',
+  comments: '',
 })
 
 const showAlert = ref(false)
@@ -220,41 +201,42 @@ const submitForm = async () => {
       const payload = {
         formData: {
           accountName: form.value.company,
-          industry: form.value.industry,
+          Department: form.value.industry,
           phone: form.value.phone,
           firstName: form.value.firstName,
           lastName: form.value.lastName,
           email: form.value.email,
-          fuenteDePosibleClientes: 'Nuevo cliente',
-          areaDeCampo: form.value.service,
+          Fuente_de_posible_clientes: 'Nuevo cliente',
+          readecampo: form.value.areaDeCampo,
           empresa: form.value.company,
           mobile: form.value.phone,
           title: '',
-          department: '',
-          city: form.value.city,
+          mailing_city: form.value.city,
           comments: form.value.comments
         }
       };
+      
+      console.log(payload);
 
-      const headers = {
-        'Content-Type': 'application/json'
-      };
+      // const headers = {
+      //   'Content-Type': 'application/json'
+      // };
 
-      const response = await fetch('/.netlify/functions/zohowebhook', {
-        method: 'POST',
-        headers: headers,
-        body: JSON.stringify(payload)
-      });
+      // const response = await fetch('/.netlify/functions/zohowebhook', {
+      //   method: 'POST',
+      //   headers: headers,
+      //   body: JSON.stringify(payload)
+      // });
 
-      const data = await response.json();
+      // const data = await response.json();
 
-      if (!response.ok) {
-        throw new Error(data.error || 'Network response was not ok');
-      }
+      // if (!response.ok) {
+      //   throw new Error(data.error || 'Network response was not ok');
+      // }
 
-      showAlert.value = true;
-      // Reset form
-      Object.keys(form.value).forEach(key => form.value[key] = '');
+      // showAlert.value = true;
+      // // Reset form
+      // Object.keys(form.value).forEach(key => form.value[key] = '');
     } catch (error) {
       console.error('Error submitting form:', error);
       alert('Ocurrió un error al enviar tus datos. Por favor, inténtalo de nuevo.');
