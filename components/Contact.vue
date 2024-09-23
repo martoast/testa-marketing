@@ -105,22 +105,9 @@
                 required
               />
             </div>
-            <div>
-              <label for="department" class="block text-sm font-medium text-gray-700">Industria</label>
-              <select 
-                name="department" 
-                id="department" 
-                v-model="form.department"
-                class="mt-1 block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"
-                required
-              >
-                <option value="" disabled>Seleccione una industria</option>
-                <option value="Alimentos y Bebidas">Alimentos y Bebidas</option>
-                <option value="Inmobiliario-Mueble-Construcción">Inmobiliario-Mueble-Construcción</option>
-                <option value="Servicios Profesionales">Servicios Profesionales</option>
-                <option value="Otros">Otros</option>
-              </select>
-            </div>
+
+            <CustomSelect v-model="form.areaDeCampo"/>
+            
           </div>
           
           <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
@@ -135,8 +122,26 @@
                 required
               />
             </div>
-            <CustomSelect v-model="form.areaDeCampo"/>
+
+            <div>
+              <label for="estado" class="block text-sm font-medium text-gray-700">Estado</label>
+              <input 
+                type="text" 
+                name="estado" 
+                id="estado" 
+                v-model="form.estado"
+                class="mt-1 block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-primary focus:ring-primary"
+                required
+              />
+            </div>
+
+            
+            
           </div>
+
+          
+
+          
           
           <div>
             <label for="comments" class="block text-sm font-medium text-gray-700">Comentarios</label>
@@ -175,7 +180,6 @@ const form = ref({
   email: '',
   phone: '',
   empresa: '',
-  department: '',
   city: '',
   areaDeCampo: [],
   comments: '',
@@ -208,11 +212,9 @@ const submitForm = async () => {
           phone: form.value.phone,
           empresa: form.value.empresa,
           mailingCity: form.value.city,
-          estado: "-None-",
+          estado: form.value.estado,
           rea_de_campo: form.value.areaDeCampo,
           description: form.value.comments,
-          title: 'title',
-          department: form.value.department,
           fuenteDePosibleClientes: 'Nuevo cliente',
         }
       };

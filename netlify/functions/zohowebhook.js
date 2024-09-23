@@ -90,8 +90,6 @@ async function createContact(formData, accountId) {
         Empresa: formData.empresa,
         Mobile: formData.mobile,
         Phone: formData.phone,
-        Title: formData.title,
-        Department: formData.department,
         Mailing_City: formData.mailingCity,
         Estado: formData.estado,
         Description: formData.description,

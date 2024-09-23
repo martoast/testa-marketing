@@ -1,6 +1,6 @@
 <template>
     <div class="relative" ref="dropdownRef">
-      <label for="areaDeCampo" class="block text-sm font-medium text-gray-700">Área de campo</label>
+      <label for="areaDeCampo" class="block text-sm font-medium text-gray-700">Servicio de interés</label>
       <div 
         @click="toggleDropdown"
         class="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-primary focus:outline-none focus:ring-primary cursor-pointer"
