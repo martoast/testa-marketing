@@ -20,7 +20,7 @@
   appleMobileWebAppCapable: 'yes',
   mobileWebAppCapable: 'yes',
   ogImage: {
-    url: '/public/testa-main-logo.svg'
+    url: '/testa-oglogo.jpg'
   },
   ogLocaleAlternate: ['en_US'],
   ogType: 'website'
