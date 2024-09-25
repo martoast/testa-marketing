@@ -14,7 +14,7 @@
         <div class="relative">
           <h2 class="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">Servicios</h2>
           <p class="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-500">
-            Nuestra ventaja es la capacidad de traducir las gráficas y números en estrategias efectivas para nuestros clientes. La variedad de sectores que hemos atendido durante más de 20 años hablan por nosotros y a continuación te comentamos sobre nuestros servicios.
+            Nuestra ventaja es la capacidad de traducir las gráficas y números en estrategias efectivas para nuestros clientes. La variedad de sectores que hemos atendido durante más de 20 años hablan por nosotros.
           </p>
         </div>
   
@@ -34,7 +34,6 @@
                   <p class="ml-16 text-lg font-medium leading-6 text-gray-900">{{ service.name }}</p>
                 </dt>
                 <dd class="ml-16 mt-2 text-base text-gray-500">{{ service.description }}</dd>
-                <a href="#" class="ml-16 mt-2 text-sm font-medium text-primary hover:text-primary-dark">Ver Detalles</a>
               </div>
             </dl>
           </div>
@@ -67,7 +66,6 @@
                     <p class="ml-16 text-lg font-medium leading-6 text-gray-900">{{ service.name }}</p>
                   </dt>
                   <dd class="ml-16 mt-2 text-base text-gray-500">{{ service.description }}</dd>
-                  <a href="#" class="ml-16 mt-2 text-sm font-medium text-primary hover:text-primary-dark">Ver Detalles</a>
                 </div>
               </dl>
             </div>

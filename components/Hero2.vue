@@ -17,7 +17,7 @@
         <div class="lg:grid lg:grid-cols-12 lg:gap-8">
           <div class="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
             <h1>
-              <span class="block text-base font-semibold text-primary sm:text-lg lg:text-base xl:text-lg">Más de 20 años de excelencia</span>
+              <span class="block text-base font-semibold text-primary sm:text-lg lg:text-base xl:text-lg">Más de 20 años de experiencia</span>
               <span class="mt-1 block text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
                 <span class="block text-gray-900">Investigación de</span>
                 <span class="block text-primary">Mercados</span>
@@ -37,7 +37,7 @@
               />
               <p class="mt-3 text-sm text-gray-500">
               ¿Interesado en unirte a nuestro equipo?
-              <a href="#careers" class="font-medium text-primary hover:text-hover">Súmate al equipo</a>
+              <a href="mailto:info@testamarketing.com" class="font-medium text-primary hover:text-hover">Súmate al equipo</a>
               </p>
             </div>
           </div>

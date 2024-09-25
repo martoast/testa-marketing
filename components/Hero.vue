@@ -69,7 +69,7 @@
                     </a>
                   </div>
                   <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Investigación de Mercados</h1>
-                  <p class="mt-3 text-base text-white sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Más de 20 años de excelencia en entender mercados y crear estrategias efectivas. Transformamos datos en soluciones para tu negocio.</p>                  <p class="mt-8 text-base font-semibold text-white sm:mt-10">Usado por</p>
+                  <p class="mt-3 text-base text-white sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Más de 20 años de experiencia en entender mercados y crear estrategias efectivas. Transformamos datos en soluciones para tu negocio.</p>                  <p class="mt-8 text-base font-semibold text-white sm:mt-10">Usado por</p>
                 <div class="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                   <div class="flex flex-wrap items-start justify-between">
                     <div class="flex justify-center px-1">

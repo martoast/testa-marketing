@@ -24,11 +24,11 @@
             <a v-for="item in navigation" :key="item.name" :href="item.href" class="font-medium text-gray-500 hover:text-gray-900">{{ item.name }}</a>
           </div>
         </div>
-        <div class="hidden text-right md:block">
+        <!-- <div class="hidden text-right md:block">
           <span class="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
             <a href="#contact" class="inline-flex items-center rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white hover:bg-hover">Contacto</a>
           </span>
-        </div>
+        </div> -->
       </nav>
   
       <transition enter-active-class="duration-150 ease-out" enter-from-class="opacity-0 scale-95" enter-to-class="opacity-100 scale-100" leave-active-class="duration-100 ease-in" leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">

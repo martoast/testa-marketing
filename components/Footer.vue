@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
-          <p class="text-xs leading-5 text-gray-500">&copy; 2024 Testa Marketing, Inc. All rights reserved.</p>
+          <p class="text-xs leading-5 text-gray-500">&copy; 2025 Testa Marketing, Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -85,8 +85,7 @@
     { name: 'San Diego', href: '/#locations' },
   ],
   legal: [
-    { name: 'Aviso de Privacidad', href: '#' },
-    { name: 'Términos y Condiciones', href: '#' },
+    { name: 'Aviso de Privacidad', href: '/privary-policy' },
   ],
   social: [
     {
