@@ -104,13 +104,7 @@
             alt="bachoco-logo"
           />
         </div>
-        <div class="flex items-center justify-center">
-          <img
-            class="max-h-16 w-auto object-contain"
-            src="/pan.svg"
-            alt="pan-logo"
-          />
-        </div>
+        
         <div class="flex items-center justify-center">
           <img
             class="max-h-40 w-auto object-contain"
@@ -125,13 +119,7 @@
             alt="bachoco-logo"
           />
         </div>
-        <div class="flex items-center justify-center">
-          <img
-            class="max-h-16 w-auto object-contain"
-            src="/pri.svg"
-            alt="pri-logo"
-          />
-        </div>
+        
         <div class="flex items-center justify-center">
           <img
             class="max-h-16 w-auto object-contain"
@@ -144,6 +132,20 @@
             class="max-h-12 w-auto object-contain"
             src="/kuroda.svg"
             alt="kuroda-logo"
+          />
+        </div>
+        <div class="flex items-center justify-center">
+          <img
+            class="max-h-16 w-auto object-contain"
+            src="/pan.svg"
+            alt="pan-logo"
+          />
+        </div>
+        <div class="flex items-center justify-center">
+          <img
+            class="max-h-16 w-auto object-contain"
+            src="/pri.svg"
+            alt="pri-logo"
           />
         </div>
         <div class="flex items-center justify-center">
