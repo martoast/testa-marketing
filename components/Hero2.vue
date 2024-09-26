@@ -23,7 +23,7 @@
                 <span class="block text-primary">Mercados</span>
               </span>
             </h1>
-            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Transformamos datos en soluciones para tu negocio. Entendemos mercados y creamos estrategias efectivas para impulsar tu éxito.</p>
+            <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Transformamos datos en soluciones para tu negocio. Entendemos los mercados y creamos estrategias efectivas para tener éxito en ellos.</p>
             <div class="mt-8 sm:mx-auto sm:max-w-lg sm:text-center lg:mx-0 lg:text-left">
               <p class="text-base font-medium text-gray-900 mb-4">¿Te interesa una cotización? Contáctanos ahora.</p>
               <a href="#contact">

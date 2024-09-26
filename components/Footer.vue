@@ -85,7 +85,7 @@
     { name: 'San Diego', href: '/#locations' },
   ],
   legal: [
-    { name: 'Aviso de Privacidad', href: '/privacy-policy' },
+    { name: 'Términos de Referencia', href: '/privacy-policy' },
   ],
   social: [
     {

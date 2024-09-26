@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
+      <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2 mb-6">
         <div class="mx-auto w-full max-w-xl lg:mx-0">
           <h2 class="text-3xl font-bold tracking-tight text-gray-900">Algunos de nuestros clientes</h2>
           <p class="mt-6 text-lg leading-8 text-gray-600">Más de 20 años en el mercado y las marcas que hemos atendido son el respaldo que habla de nuestra experiencia y confianza.</p>
@@ -10,7 +10,7 @@
             <a href="/#contact" class="text-sm font-semibold text-gray-900">Contáctanos <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
-        <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
+        <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none">
           <img 
             class="h-12 w-auto object-contain p-1"
             src="/calimax.svg"
@@ -44,6 +44,70 @@
             alt="smart-logo"
           />
         </div>
+      </div>
+      <div class="hidden md:grid pt-4 mx-auto w-full max-w-xl grid-cols-4 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
+          <img 
+            class="h-24 w-auto object-contain p-1"
+            src="/Toros.svg"
+            alt="Calimax-logo"
+          />
+          <img 
+            class="h-24 w-auto object-contain p-1"
+            src="/Harley.svg"
+            alt="Cocacola-logo"
+          />
+          <img 
+            class="h-12 w-auto object-contain"
+            src="/McGraw.svg"
+            alt="Ford-logo"
+          />
+         
+          
+          <img 
+            class="h-24 w-auto object-contain"
+            src="/cetys_universidad.svg"
+            alt="Caliente-logo"
+          />
+          <img 
+            class="h-10 w-auto object-contain p-1"
+            src="/Wilson.svg"
+            alt="bachoco-logo"
+          />
+          <img 
+            class="h-16 w-auto object-contain"
+            src="/pan.svg"
+            alt="smart-logo"
+          />
+          <img 
+            class="h-14 w-auto object-contain"
+            src="/florido.svg"
+            alt="Caliente-logo"
+          />
+          <img 
+            class="h-12 w-auto object-contain p-1"
+            src="/truper.svg"
+            alt="bachoco-logo"
+          />
+          <img 
+            class="h-16 w-auto object-contain"
+            src="/pri.svg"
+            alt="smart-logo"
+          />
+          <img 
+            class="h-16 w-auto object-contain"
+            src="/UAG.svg"
+            alt="Caliente-logo"
+          />
+          <img 
+            class="h-12 w-auto object-contain p-1"
+            src="/kuroda.svg"
+            alt="bachoco-logo"
+          />
+          <img 
+            class="h-24 object-contain"
+            src="/morena.svg"
+            alt="smart-logo"
+          />
       </div>
     </div>
   </div>

@@ -12,9 +12,9 @@
         </svg>
         
         <div class="relative">
-          <h2 class="text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">Servicios</h2>
-          <p class="mx-auto mt-4 max-w-3xl text-center text-xl text-gray-500">
-            Nuestra ventaja es la capacidad de traducir las gráficas y números en estrategias efectivas para nuestros clientes. La variedad de sectores que hemos atendido durante más de 20 años hablan por nosotros.
+          <h2 class="text-center md:text-5xl font-bold leading-8 tracking-tight text-gray-900 text-4xl">Servicios</h2>
+          <p class="mx-auto mt-4 max-w-4xl text-center text-xl text-gray-500">
+            Nuestra ventaja es la capacidad de traducir las gráficas y números en estrategias efectivas para nuestros clientes. La variedad de sectores que hemos atendido durante más de 20 años hablan por nosotros y a continuación te comentamos sobre nuestros servicios.
           </p>
         </div>
   
@@ -102,49 +102,49 @@
     {
       id: 1,
       name: 'Encuestas Cara a Cara (CAPI)',
-      description: 'Es una de las técnicas cuantitativas más usadas en marketing, se llevan a cabo en vivienda, plazas comerciales y puntos de aforo poblacional.',
+      description: 'Es una de las técnicas cuantitativas más usadas en marketing, se llevan a cabo en vivienda, plazas comerciales y puntos de aforo poblacional. Permite obtener información detallada y precisa directamente de los encuestados.',
       icon: UserGroupIcon,
     },
     {
       id: 2,
       name: 'Encuesta Telefónica (CATI)',
-      description: 'Mejor conocida como Computer Assisted Telephone Interviewing (CATI), es un método ágil, preciso y económico de investigación de mercados.',
+      description: 'Mejor conocida como Computer Assisted Telephone Interviewing (CATI), es un método ágil, preciso y económico de investigación de mercados. Facilita la recopilación rápida de datos de una amplia muestra geográfica.',
       icon: PhoneIcon,
     },
     {
       id: 3,
       name: 'Encuesta online',
-      description: 'Las Encuestas por Email o CAWI (Computer Assisted Web Interview) es la misma técnica utilizada en CAPI o CATI solo que a través de links personalizados para que las personas respondan los cuestionarios.',
+      description: 'Las Encuestas por Email o CAWI (Computer Assisted Web Interview) es la misma técnica utilizada en CAPI o CATI solo que a través de links personalizados para que las personas respondan los cuestionarios. Ofrece flexibilidad y comodidad para los participantes, aumentando la tasa de respuesta.',
       icon: GlobeAltIcon,
     },
     {
       id: 4,
       name: 'Mystery Shopper',
-      description: 'Un agente profesional se hace pasar por un consumidor para analizar la conducta, comportamiento y actitudes de los empleados en una empresa.',
+      description: 'Un agente profesional se hace pasar por un consumidor para analizar la conducta, comportamiento y actitudes de los empleados en una empresa. Esta técnica proporciona una visión única de la experiencia real del cliente.',
       icon: ShoppingBagIcon,
     },
     {
       id: 5,
       name: 'Entrevistas a Profundidad',
-      description: 'Es una técnica cualitativa muy específica, pues busca recolectar información de personas con perfiles definidos y generalmente con agendas muy saturadas.',
+      description: 'Es una técnica cualitativa muy específica, pues busca recolectar información de personas con perfiles definidos y generalmente con agendas muy saturadas. Permite obtener insights valiosos y detallados sobre temas complejos.',
       icon: UserCircleIcon,
     },
     {
       id: 6,
       name: 'Grupos Focales',
-      description: 'Los grupos focales o focus groups pueden ser ONLINE o PRESENCIALES. Son una técnica cualitativa muy solicitada por empresas que lanzarán nuevos productos o campañas publicitarias.',
+      description: 'Los grupos focales o focus groups pueden ser ONLINE o PRESENCIALES. Son una técnica cualitativa muy solicitada por empresas que lanzarán nuevos productos o campañas publicitarias. Permiten explorar las percepciones y opiniones de un grupo diverso de manera interactiva.',
       icon: UsersIcon,
     },
     {
       id: 7,
       name: 'Estudios de Gabinete',
-      description: 'INEGI, bases de datos específicas, estudios especializados y nuestros vínculos con diversos centros universitarios nos dan un menú muy amplio de fuentes de calidad para fortalecer nuestros estudios de mercado.',
+      description: 'INEGI, bases de datos específicas, estudios especializados y nuestros vínculos con diversos centros universitarios nos dan un menú muy amplio de fuentes de calidad para fortalecer nuestros estudios de mercado. Esta metodología ofrece una visión integral basada en datos confiables y actualizados.',
       icon: BookOpenIcon,
     },
     {
       id: 8,
       name: 'Consultoría y Marketing',
-      description: 'El mundo cambió y el marketing también. ¿Estás listo? Podemos ayudarte con tus planes y estrategias de marketing.',
+      description: 'El mundo cambió y el marketing también. ¿Estás listo? Podemos ayudarte con tus planes y estrategias de marketing. Nuestro enfoque personalizado se adapta a las necesidades únicas de tu negocio en el entorno digital actual.',
       icon: ChartBarIcon,
     },
   ]

@@ -6,9 +6,13 @@
         <p class="mt-6 text-lg leading-8 text-gray-600">Mucho talento se ha formado en nuestra empresa durante más de 20 años, aquí parte de nuestro equipo coordinador. A ellos se le suma más de 100 encuestadores en todo México.</p>
       </div>
       <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-        <li v-for="person in people" :key="person.name">
+        <li v-for="(person, index) in people" :key="person.name">
           <div class="flex items-center gap-x-6">
-            <NuxtImg 
+            <div class="relative">
+              <div class="absolute -top-3 -right-1 w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-xs font-bold">
+                {{ index + 1 }}
+              </div>
+              <NuxtImg 
                 :src="person.imageUrl"
                 alt=""
                 class="h-16 w-16 rounded-full object-cover"
@@ -16,6 +20,7 @@
                 height="64"
                 preset="avatar"
               />
+            </div>
             <div>
               <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">{{ person.name }}</h3>
               <p class="text-sm font-semibold leading-6 text-primary">{{ person.role }}</p>
@@ -46,7 +51,7 @@
 const people = [
   {
     name: 'Ariosto Manrique',
-    role: 'Director',
+    role: 'Director General',
     imageUrl: '/ariosto-profile.webp',
     cvUrl: 'https://testamarketing.com/storage/files/CVAriostoESP.pdf',
     linkedinUrl: 'https://www.linkedin.com/in/ariostomanrique/',
@@ -59,7 +64,7 @@ const people = [
   },
   {
     name: 'Moises Espitia',
-    role: 'Análisis',
+    role: 'Análisis Cuantitativo',
     imageUrl: '/team1.webp',
     linkedinUrl: 'https://www.linkedin.com/in/moises-espitia/',
   },
@@ -77,7 +82,7 @@ const people = [
   },
   {
     name: 'Luis Carlos',
-    role: 'Análisis',
+    role: 'Análisis Calitativo',
     imageUrl: '/LuisCarlos.webp',
     linkedinUrl: '#',
   },
