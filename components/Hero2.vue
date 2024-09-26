@@ -42,11 +42,12 @@
             </div>
 
             <div class="mt-5 w-full mx-auto">
+              <p class="text-sm font-medium text-gray-500 mb-1">Miembro de:</p>
                   <div class="flex flex-wrap items-start justify-center lg:justify-between">
                     <div class="flex justify-center mx-auto md:mx-0">
-                      <img class="p-1" src="/emblem1.svg" alt="emblem1" style="height:6.5rem" width="auto" />
-                      <img class="p-1" src="/emblem2.svg" style="height:6.5rem" width="auto" alt="emblem2" />
-                      <img class="p-1" src="/emblem3.svg" style="height:6.5rem" width="auto" alt="emblem3" />
+                      <img class="p-1" src="/ESO.png" alt="emblem1" style="height:6.5rem" width="auto" />
+                      <img class="p-1" src="/CDT.png" style="height:6.5rem" width="auto" alt="emblem2" />
+                      <img class="p-1" src="/MERCA.png" style="height:6.5rem" width="auto" alt="emblem3" />
                     </div>
                   </div>
             </div>
