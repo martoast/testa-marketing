@@ -72,11 +72,11 @@
   
             <div class="relative -mx-4 mt-10 lg:col-start-1 lg:mt-0">
               <NuxtImg 
-            src="/feature.webp" 
+            src="/feature2.webp" 
             alt="Servicios especializados" 
                 class="relative mx-auto"
                 width="490"
-                height="414"
+                height="auto"
               />
             </div>
           </div>

@@ -40,6 +40,16 @@
               <a href="mailto:info@testamarketing.com" class="font-medium text-primary hover:text-hover">Súmate al equipo</a>
               </p>
             </div>
+
+            <div class="mt-5 w-full mx-auto">
+                  <div class="flex flex-wrap items-start justify-center lg:justify-between">
+                    <div class="flex justify-center mx-auto md:mx-0">
+                      <img class="p-1" src="/emblem1.svg" alt="emblem1" style="height:6.5rem" width="auto" />
+                      <img class="p-1" src="/emblem2.svg" style="height:6.5rem" width="auto" alt="emblem2" />
+                      <img class="p-1" src="/emblem3.svg" style="height:6.5rem" width="auto" alt="emblem3" />
+                    </div>
+                  </div>
+            </div>
           </div>
           <div class="relative mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none lg:items-center">
             <svg class="absolute left-1/2 top-0 origin-top -translate-x-1/2 -translate-y-8 scale-75 transform sm:scale-100 lg:hidden" width="640" height="784" fill="none" viewBox="0 0 640 784" aria-hidden="true">

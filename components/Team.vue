@@ -82,9 +82,15 @@ const people = [
   },
   {
     name: 'Luis Carlos',
-    role: 'Análisis Calitativo',
+    role: 'Análisis Cualitativo',
     imageUrl: '/LuisCarlos.webp',
-    linkedinUrl: '#',
+    linkedinUrl: null,
+  },
+  {
+    name: 'Christian Becerra',
+    role: 'operaciones',
+    imageUrl: '/christian.webp',
+    linkedinUrl: null,
   },
 ]
 </script>
