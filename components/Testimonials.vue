@@ -63,7 +63,7 @@
           imageUrl: "" // Add the path to the CDT logo
         },
         {
-          quote: "En el tiempo que tengo el gusto de conocer Ariosto, siempre se ha desempeñado con profesionalismo, estamos contentos por el servicio rendido a nuestras compañías en materia de publicidad, se destaca por ser un gran conocedor de medios, además sin lugar a dudas es un fuerte líder en nuestra comunidad, con gran sentido de responsabilidad social.",
+          quote: "En el tiempo que tengo el gusto de conocer a Testa Marketing, siempre se han desempeñado con profesionalismo. Estamos contentos por el servicio brindado a nuestras compañías en materia de publicidad; se destaca por ser una agencia con gran conocimiento de medios. Además, sin lugar a dudas, es una agencia líder en nuestra comunidad, con un gran sentido de responsabilidad social.",
           company: "Grupo la Mesa",
           position: "",
           imageUrl: "" // Add the path to the Grupo la Mesa logo
@@ -93,7 +93,7 @@
           imageUrl: "" // Add the path to the GSE logo
         },
         {
-          quote: "Ariosto es el aliado estratégico ideal para identificar de una manera práctica, las necesidades del mercado. Realmente una eminencia en la dirección de Investigaciones de Mercado y sumamente acertado en la manera de cómo aprovechar los resultados arrojados en favor del negocio.",
+          quote: "Testa Marketing es el aliado estratégico ideal para identificar de manera práctica las necesidades del mercado. Realmente dominan con talento la investigaciones de mercado y son sumamente acertados en la manera de aprovechar los resultados obtenidos en favor del negocio.",
           company: "Nuevo Gas",
           position: "",
           imageUrl: "" // Add the path to the Nuevo Gas logo
@@ -101,7 +101,7 @@
       ],
       [
         {
-          quote: "Tengo el gusto de conocer a Ariosto desde que era un joven emprendedor en COPARMEX y siempre ha sido una persona entusiasta, creativa y por de más sincera. Ariosto es el reflejo del emprendedurismo, siempre innovando y logrando sus ideales y de sus clientes. Además de ser una persona con altos estándares humanos.",
+          quote: "Tengo el gusto de conocer a Testa Marketing desde sus inicios y siempre ha sido una agencia entusiasta, creativa y sumamente sincera. Testa Marketing es el reflejo del espíritu emprendedor, siempre innovando y logrando los ideales tanto propios como los de sus clientes. Además, es una empresa con altos estándares humanos.",
           company: "Motiva Contact Centers",
           position: "",
           imageUrl: "" // Add the path to the Motiva Contact Centers logo
