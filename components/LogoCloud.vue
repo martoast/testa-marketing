@@ -153,6 +153,14 @@
             alt="morena-logo"
           />
         </div>
+
+        <div class="flex items-center justify-center">
+          <img
+            class="max-h-14 w-auto lg:w-1/2 object-contain"
+            src="/BostonPizza.svg"
+            alt="bostonpizza-logo"
+          />
+        </div>
       </div>
     </div>
   </div>
