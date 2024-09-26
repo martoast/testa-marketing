@@ -88,7 +88,7 @@ const people = [
   },
   {
     name: 'Christian Becerra',
-    role: 'operaciones',
+    role: 'Operaciones',
     imageUrl: '/christian.webp',
     linkedinUrl: null,
   },

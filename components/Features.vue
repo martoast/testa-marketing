@@ -12,17 +12,20 @@
         </svg>
         
         <div class="relative">
-          <h2 class="text-center md:text-5xl font-bold leading-8 tracking-tight text-gray-900 text-4xl">Servicios</h2>
+          
+          <div>
+            <h2 class="text-center md:text-3xl font-bold leading-8 tracking-tight text-gray-900 text-4xl">¿Qué es una agencia de investigación de mercados?</h2>
           <p class="mx-auto mt-4 max-w-4xl text-center text-xl text-gray-500">
-            Nuestra ventaja es la capacidad de traducir las gráficas y números en estrategias efectivas para nuestros clientes. La variedad de sectores que hemos atendido durante más de 20 años hablan por nosotros y a continuación te comentamos sobre nuestros servicios.
+            Es una firma enfocada en generar y analizar información para que las empresas puedan tomar mejores decisiones. Mientras la publicidad es el "lado emocional" de la mercadotecnia, la investigación de mercados es el "lado racional" del marketing.
           </p>
+          </div>
         </div>
   
         <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
           <div class="relative">
-            <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">¿Qué es una agencia de investigación de mercados?</h3>
+            <h3 class="text-2xl font-bold tracking-tight text-gray-900 md:text-3xl">Servicios</h3>
             <p class="mt-3 text-lg text-gray-500">
-              Es una firma enfocada en generar y analizar información para que las empresas puedan tomar mejores decisiones. Mientras la publicidad es el "lado emocional" de la mercadotecnia, la investigación de mercados es el "lado racional" del marketing.
+              Nuestra ventaja es la capacidad de traducir las gráficas y números en estrategias efectivas para nuestros clientes. La variedad de sectores que hemos atendido durante más de 20 años hablan por nosotros y a continuación te comentamos sobre nuestros servicios.
             </p>
   
             <dl class="mt-10 space-y-10">
