@@ -55,11 +55,6 @@
         <div class="relative mt-12 sm:mt-16 lg:mt-24">
           <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
             <div class="lg:col-start-2">
-              <h3 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Nuestros Servicios Especializados</h3>
-              <p class="mt-3 text-lg text-gray-500">
-                Ofrecemos una amplia gama de servicios de investigación de mercados para satisfacer las necesidades específicas de tu empresa.
-              </p>
-  
               <dl class="mt-10 space-y-10">
                 <div v-for="service in services.slice(3)" :key="service.id" class="relative">
                   <dt>
