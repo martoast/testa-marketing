@@ -163,6 +163,22 @@
           />
         </div>
 
+        <div class="flex items-center justify-center">
+          <img
+            class="max-h-16 w-auto lg:w-1/2 object-contain"
+            src="/florido.svg"
+            alt="florido-logo"
+          />
+        </div>
+
+        <div class="flex items-center justify-center">
+          <img
+            class="max-h-16 w-auto lg:w-1/2 object-contain"
+            src="/huffy.svg"
+            alt="huffy-logo"
+          />
+        </div>
+
         
       </div>
     </div>

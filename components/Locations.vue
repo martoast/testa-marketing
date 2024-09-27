@@ -12,10 +12,9 @@
               <div class="rounded-2xl bg-gray-50 p-10">
                 <h3 class="text-base font-semibold leading-7 text-gray-900">Tijuana B.C.</h3>
                 <address class="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
-                  <p>Blvd. Agua Caliente 9955, piso 5</p>
-                  <p>Fraccionamiento Calete</p>
-                  <p>Edificio Torela Corporativo</p>
-                  <p>22044 Tijuana, B.C.</p>
+                  <p>Sach - Edificio Torella Corporativo</p>
+                  <p>Blvd. Agua Caliente 9955-Piso 5</p>
+                  <p>Calete, 22044 Tijuana, B.C.</p>
                   <p>+52 (664) 889-5909</p>
                   <p><a href="mailto:info@testamarketing.com" class="text-primary">info@testamarketing.com</a></p>
                 </address>
@@ -24,9 +23,9 @@
               <div class="rounded-2xl bg-gray-50 p-10">
                 <h3 class="text-base font-semibold leading-7 text-gray-900">Guadalajara</h3>
                 <address class="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
-                  <p>Av. Acueducto 6075-A, local 04</p>
-                  <p>Colonia Puerta de Hierro</p>
-                  <p>Zapopan, Jalisco</p>
+                  <p>Av. Acueducto 6075-A, local 04,</p>
+                  <p>Puerta de Hierro,</p>
+                  <p>45116 Zapopan, Jal.</p>
                   <p>+52 (333) 610-2742</p>
                   <p><a href="mailto:info@testamarketing.com" class="text-primary">info@testamarketing.com</a></p>
                 </address>
@@ -34,8 +33,8 @@
               <div class="rounded-2xl bg-gray-50 p-10">
                 <h3 class="text-base font-semibold leading-7 text-gray-900">Ciudad de México</h3>
                 <address class="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
-                  <p>Calzada Mariano Escobedo 476, piso 12, int. 1200-B</p>
-                  <p>Colonia Anzures, Alcaldía Miguel Hidalgo</p>
+                  <p>Calz. Gral. Mariano Escobedo 476-piso 12, int. 1200-B,</p>
+                  <p>Chapultepec Morales, Verónica Anzúres, Miguel Hidalgo, 11592 Miguel Hidalgo,</p>
                   <p>Ciudad de México</p>
                   <p>+52 (559) 417-5263</p>
                   <p><a href="mailto:info@testamarketing.com" class="text-primary">info@testamarketing.com</a></p>
@@ -53,8 +52,8 @@
               <div class="rounded-2xl bg-gray-50 p-10">
                 <h3 class="text-base font-semibold leading-7 text-gray-900">San Diego</h3>
                 <address class="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
-                  <p>W. San Ysidro Blvd. #767</p>
-                  <p>San Ysidro, CA, 92173</p>
+                  <p>482 W San Ysidro Blvd #767,</p>
+                  <p>San Ysidro, CA 92173, Estados Unidos</p>
                   <p>+1 (619) 730-1871</p>
                   <p><a href="mailto:info@testamarketing.com" class="text-primary">info@testamarketing.com</a></p>
                 </address>
