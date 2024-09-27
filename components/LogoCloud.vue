@@ -23,52 +23,56 @@
             >
           </div>
         </div>
-        <div class="mx-auto grid w-full max-w-3xl grid-cols-2 gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:ml-6">
-  <div class="flex items-center justify-center">
-    <img
-      class="max-h-12 w-auto object-contain"
-      src="/calimax.svg"
-      alt="Calimax-logo"
-    />
-  </div>
-  <div class="flex items-center justify-center">
-    <img
-      class="max-h-12 w-auto object-contain"
-      src="/Coca-Cola_logo.svg"
-      alt="Cocacola-logo"
-    />
-  </div>
-  <div class="flex items-center justify-center">
-    <img
-      class="max-h-12 w-auto object-contain"
-      src="/ford.svg"
-      alt="Ford-logo"
-    />
-  </div>
-  <div class="flex items-center justify-center">
-    <img
-      class="max-h-12 w-auto object-contain"
-      src="/caliente.svg"
-      alt="Caliente-logo"
-    />
-  </div>
-  <div class="flex items-center justify-center">
-    <img
-      class="max-h-12 w-auto object-contain"
-      src="/bachoco.svg"
-      alt="bachoco-logo"
-    />
-  </div>
-  <div class="flex items-center justify-center">
-    <img
-      class="max-h-5 w-auto object-contain"
-      src="/smart.svg"
-      alt="smart-logo"
-    />
-  </div>
-</div>
+        <div
+          class="mx-auto grid w-full max-w-3xl grid-cols-2 gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:ml-6"
+        >
+          <div class="flex items-center justify-center">
+            <img
+              class="max-h-12 w-auto object-contain"
+              src="/calimax.svg"
+              alt="Calimax-logo"
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              class="max-h-12 w-auto object-contain"
+              src="/Coca-Cola_logo.svg"
+              alt="Cocacola-logo"
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              class="max-h-12 w-auto object-contain"
+              src="/ford.svg"
+              alt="Ford-logo"
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              class="max-h-12 w-auto object-contain"
+              src="/caliente.svg"
+              alt="Caliente-logo"
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              class="max-h-12 w-auto object-contain"
+              src="/bachoco.svg"
+              alt="bachoco-logo"
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              class="max-h-5 w-auto object-contain"
+              src="/smart.svg"
+              alt="smart-logo"
+            />
+          </div>
+        </div>
       </div>
-      <div class="grid pt-4 mx-auto w-full max-w-xl grid-cols-2 md:grid-cols-4 gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none">
+      <div
+        class="grid pt-4 mx-auto w-full max-w-xl grid-cols-2 md:grid-cols-4 gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none"
+      >
         <div class="flex items-center justify-center">
           <img
             class="max-h-24 w-auto object-contain"
@@ -104,22 +108,23 @@
             alt="bachoco-logo"
           />
         </div>
-        
+
+        <div class="flex items-center justify-center">
+            <img
+              class="max-h-5 w-auto object-contain"
+              src="/mirage.svg"
+              alt="mirage-logo"
+            />
+          </div>
+
         <div class="flex items-center justify-center">
           <img
-            class="max-h-40 w-auto object-contain"
-            src="/tecate.svg"
-            alt="tecate-logo"
-          />
-        </div>
-        <div class="flex items-center justify-center">
-          <img
-            class="max-h-12 w-auto object-contain"
+            class="max-h-10 w-auto object-contain"
             src="/truper.svg"
             alt="bachoco-logo"
           />
         </div>
-        
+
         <div class="flex items-center justify-center">
           <img
             class="max-h-16 w-auto object-contain"
@@ -129,7 +134,7 @@
         </div>
         <div class="flex items-center justify-center">
           <img
-            class="max-h-12 w-auto object-contain"
+            class="max-h-10 w-auto object-contain"
             src="/kuroda.svg"
             alt="kuroda-logo"
           />
@@ -137,22 +142,8 @@
         <div class="flex items-center justify-center">
           <img
             class="max-h-16 w-auto object-contain"
-            src="/pan.svg"
-            alt="pan-logo"
-          />
-        </div>
-        <div class="flex items-center justify-center">
-          <img
-            class="max-h-16 w-auto object-contain"
-            src="/pri.svg"
-            alt="pri-logo"
-          />
-        </div>
-        <div class="flex items-center justify-center">
-          <img
-            class="max-h-32 w-auto object-contain"
-            src="/morena.svg"
-            alt="morena-logo"
+            src="/politica.svg"
+            alt="politica-logo"
           />
         </div>
 
@@ -163,6 +154,16 @@
             alt="bostonpizza-logo"
           />
         </div>
+
+        <div class="flex items-center justify-center">
+          <img
+            class="max-h-10 w-auto lg:w-1/2 object-contain"
+            src="/gen.svg"
+            alt="gen-logo"
+          />
+        </div>
+
+        
       </div>
     </div>
   </div>
