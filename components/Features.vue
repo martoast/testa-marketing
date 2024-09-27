@@ -14,7 +14,7 @@
         <div class="relative">
           
           <div>
-            <h2 class="text-center md:text-3xl font-bold leading-8 tracking-tight text-gray-900 text-4xl">¿Qué es una agencia de investigación de mercados?</h2>
+            <h2 class="text-center md:text-3xl font-bold leading-8 tracking-tight text-gray-900 text-2xl">¿Qué es una agencia de investigación de mercados?</h2>
           <p class="mx-auto mt-4 max-w-4xl text-center text-xl text-gray-500">
             Es una firma enfocada en generar y analizar información para que las empresas puedan tomar mejores decisiones. Mientras la publicidad es el "lado emocional" de la mercadotecnia, la investigación de mercados es el "lado racional" del marketing.
           </p>
