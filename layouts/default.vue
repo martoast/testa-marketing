@@ -8,20 +8,18 @@
 
 <script setup>
   
-  useServerSeoMeta({
-  title: 'Testa Marketing - Investigación de Mercados',
-  ogTitle: 'Testa Marketing - Investigación de Mercados',
+  useSeoMeta({
+  title: 'Testa Marketing: Agencia de Investigación de Mercados',
+  ogTitle: 'Testa Marketing: Agencia de Investigación de Mercados',
   author: 'Alex Martos',
   charset: 'utf-8',
-  description: "Transformamos datos en soluciones para tu negocio. Entendemos mercados y creamos estrategias efectivas para impulsar tu éxito.",
-  ogDescription: "Transformamos datos en soluciones para tu negocio. Entendemos mercados y creamos estrategias efectivas para impulsar tu éxito.",
+  description: "Testa Marketing es una agencia de Investigación de Mercados con más de 20 años de experiencia y nuestra principal ventaja es la cobertura nacional junto con la capacidad de traducir los números estadísticos en estrategias efectivas para nuestros clientes.",
+  ogDescription: "Testa Marketing es una agencia de Investigación de Mercados con más de 20 años de experiencia y nuestra principal ventaja es la cobertura nacional junto con la capacidad de traducir los números estadísticos en estrategias efectivas para nuestros clientes.",
   robots: 'index, follow',
   googleSiteVerification: '',
   appleMobileWebAppCapable: 'yes',
   mobileWebAppCapable: 'yes',
-  ogImage: {
-    url: '/public/testa-oglogo.jpg'
-  },
+  ogImage: 'https://tokystorage.s3.amazonaws.com/company-pic/4c5abf25e4739d8443a76f1c784526ba-cover.png',
   ogLocaleAlternate: ['en_US'],
   ogType: 'website'
 })

@@ -49,23 +49,23 @@
           </div>
           <div class="flex items-center justify-center">
             <img
-              class="max-h-12 w-auto object-contain"
+              class="max-h-14 w-auto object-contain"
               src="/caliente.svg"
               alt="Caliente-logo"
             />
           </div>
           <div class="flex items-center justify-center">
             <img
-              class="max-h-12 w-auto object-contain"
-              src="/bachoco.svg"
-              alt="bachoco-logo"
+              class="max-h-10 w-auto object-contain"
+              src="/oxxo-logo.svg"
+              alt="oxxo-logo"
             />
           </div>
           <div class="flex items-center justify-center">
             <img
-              class="max-h-5 w-auto object-contain"
-              src="/smart.svg"
-              alt="smart-logo"
+              class="max-h-10 w-auto object-contain"
+              src="/walmart.svg"
+              alt="walmart-logo"
             />
           </div>
         </div>
@@ -176,6 +176,22 @@
             class="max-h-16 w-auto lg:w-1/2 object-contain"
             src="/huffy.svg"
             alt="huffy-logo"
+          />
+        </div>
+
+        <div class="flex items-center justify-center">
+          <img
+            class="max-h-16 w-auto lg:w-1/2 object-contain"
+            src="/bachoco.svg"
+            alt="bachoco-logo"
+          />
+        </div>
+
+        <div class="flex items-center justify-center">
+          <img
+            class="max-h-16 w-auto lg:w-1/2 object-contain"
+            src="/smart.svg"
+            alt="smart-logo"
           />
         </div>
 
