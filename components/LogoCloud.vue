@@ -35,7 +35,7 @@
           </div>
           <div class="flex items-center justify-center">
             <img
-              class="max-h-12 w-auto object-contain"
+              class="max-h-12 w-3/4 lg:w-auto object-contain"
               src="/Coca-Cola_logo.svg"
               alt="Cocacola-logo"
             />
@@ -181,7 +181,7 @@
 
         <div class="flex items-center justify-center">
           <img
-            class="max-h-16 w-auto lg:w-1/2 object-contain"
+            class="max-h-16 w-3/4 lg:w-1/2 object-contain"
             src="/bachoco.svg"
             alt="bachoco-logo"
           />
@@ -189,7 +189,7 @@
 
         <div class="flex items-center justify-center">
           <img
-            class="max-h-16 w-auto lg:w-1/2 object-contain"
+            class="max-h-16 w-3/4 lg:w-1/2 object-contain"
             src="/smart.svg"
             alt="smart-logo"
           />
