@@ -19,7 +19,7 @@
   googleSiteVerification: '',
   appleMobileWebAppCapable: 'yes',
   mobileWebAppCapable: 'yes',
-  ogImage: 'https://scontent.ftij3-1.fna.fbcdn.net/v/t39.30808-6/313407376_495827589249462_8953498923463885895_n.png?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=crb2e41u8poQ7kNvgEJdI3w&_nc_ht=scontent.ftij3-1.fna&_nc_gid=A3VIryFLkdG5amSTvc1WwgB&oh=00_AYARAg9wncCEfAy8O0knZaSRwp6qDVnTZ5Fr3MDAZKpMiA&oe=670374E6',
+  ogImage: 'https://scontent.ftij3-2.fna.fbcdn.net/v/t39.30808-6/461836129_967220988776784_6520815888582812377_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=CZdRPSG-FhQQ7kNvgG-VPj5&_nc_ht=scontent.ftij3-2.fna&_nc_gid=ATs-wIXTPaDD8YGgqPEeXx_&oh=00_AYA9_xOqrjd_dRO57GsPPNVYG6CcaBsevgusPXV920ig3Q&oe=670418C6',
   ogUrl: 'https://testamarketing.com/',
   ogLocaleAlternate: ['en_US'],
   ogType: 'website'
