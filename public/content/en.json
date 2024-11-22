@@ -1,0 +1,219 @@
+{
+    "hero": {
+      "experience": "Over 20 years of experience",
+      "title": {
+        "main": "Market",
+        "secondary": "Research"
+      },
+      "description": "We transform data into business solutions. We understand markets and create effective strategies to succeed in them.",
+      "quote": {
+        "text": "Interested in a quote? Contact us now.",
+        "button": "Request Quote"
+      },
+      "team": {
+        "text": "Interested in joining our team?",
+        "link": "Join the team"
+      },
+      "member": "Member of:",
+      "video": "Watch our informative video"
+    },
+    "services": {
+    "mainTitle": "What is a market research agency?",
+    "mainDescription": "It is a firm focused on generating and analyzing information so that companies can make better decisions. While advertising is the \"emotional side\" of marketing, market research is the \"rational side\" of marketing.",
+    "servicesTitle": "Services",
+    "servicesDescription": "Our advantage is the ability to translate graphs and numbers into effective strategies for our clients. The variety of sectors we have served for more than 20 years speak for themselves, and below we tell you about our services.",
+    "items": {
+      "1": {
+        "name": "Face-to-Face Surveys (CAPI)",
+        "description": "It is one of the most used quantitative techniques in marketing, carried out in homes, shopping centers, and population points. It allows obtaining detailed and precise information directly from respondents."
+      },
+      "2": {
+        "name": "Telephone Survey (CATI)",
+        "description": "Better known as Computer Assisted Telephone Interviewing (CATI), it is an agile, precise, and economical market research method. It facilitates rapid data collection from a wide geographic sample."
+      },
+      "3": {
+        "name": "Online Survey",
+        "description": "Email Surveys or CAWI (Computer Assisted Web Interview) is the same technique used in CAPI or CATI but through personalized links for people to respond to questionnaires. It offers flexibility and convenience for participants, increasing response rates."
+      },
+      "4": {
+        "name": "Mystery Shopper",
+        "description": "A professional agent poses as a consumer to analyze the conduct, behavior, and attitudes of employees in a company. This technique provides a unique view of the real customer experience."
+      },
+      "5": {
+        "name": "In-Depth Interviews",
+        "description": "It is a very specific qualitative technique, as it seeks to collect information from people with defined profiles and generally with very busy schedules. It allows obtaining valuable and detailed insights on complex topics."
+      },
+      "6": {
+        "name": "Focus Groups",
+        "description": "Focus groups can be ONLINE or IN-PERSON. They are a qualitative technique highly requested by companies launching new products or advertising campaigns. They allow exploring the perceptions and opinions of a diverse group interactively."
+      },
+      "7": {
+        "name": "Desk Research",
+        "description": "INEGI, specific databases, specialized studies, and our links with various university centers give us a very broad menu of quality sources to strengthen our market studies. This methodology offers a comprehensive vision based on reliable and updated data."
+      },
+      "8": {
+        "name": "Consulting and Marketing",
+        "description": "The world has changed and so has marketing. Are you ready? We can help you with your marketing plans and strategies. Our personalized approach adapts to your business's unique needs in today's digital environment."
+      }
+    }
+    },
+    "logoCloud": {
+      "title": "Some of our clients",
+      "description": "More than 20 years in the market and the brands we have served are the backing that speaks of our experience and trust.",
+      "cta": {
+        "primary": "Request quote",
+        "secondary": "Contact us"
+      }
+    },
+    "team": {
+      "title": "The Team",
+      "description": "A lot of talent has been formed in our company for more than 20 years, here is part of our coordinating team. They are joined by more than 100 surveyors throughout Mexico.",
+      "cv": "View CV",
+      "roles": {
+        "director": "General Director",
+        "countryManager": "Country Manager (Spain)",
+        "quantitative": "Quantitative Analysis",
+        "projectManager": "Project Manager",
+        "admin": "Administration",
+        "qualitative": "Qualitative Analysis",
+        "operations": "Operations"
+      }
+    },
+    "testimonials": {
+    "subtitle": "Testimonials",
+    "title": "What our clients say",
+    "featured": {
+      "quote": "They are an agency that can help provide solutions to your company in an innovative way. Very good service.",
+      "company": "Chevron",
+      "position": ""
+    },
+    "items": {
+      "0-0-0": {
+        "quote": "They are productive, creative, proactive, simple, efficient, attentive, collaborative, open, flexible, dedicated, helpful, executive, professional, and punctual.",
+        "company": "Tijuana Development Council",
+        "position": ""
+      },
+      "0-0-1": {
+        "quote": "In the time I've had the pleasure of knowing Testa Marketing, they have always performed with professionalism. We are happy with the service provided to our companies in terms of advertising; they stand out as an agency with great media knowledge. Furthermore, without a doubt, they are a leading agency in our community, with a great sense of social responsibility.",
+        "company": "Grupo la Mesa",
+        "position": ""
+      },
+      "0-1-0": {
+        "quote": "They are a company with great experience in conducting surveys, providing continuous client follow-up, and expediting timelines to deliver before the agreed date.",
+        "company": "Atlantia Search",
+        "position": ""
+      },
+      "0-1-1": {
+        "quote": "They provide very good service, flexibility to meet requirements, and timely delivery.",
+        "company": "Polilat",
+        "position": ""
+      },
+      "1-0-0": {
+        "quote": "Excellent, very proactive.",
+        "company": "GSE",
+        "position": ""
+      },
+      "1-0-1": {
+        "quote": "Testa Marketing is the ideal strategic partner to practically identify market needs. They truly master market research with talent and are extremely accurate in how to leverage the results obtained in favor of the business.",
+        "company": "Nuevo Gas",
+        "position": ""
+      },
+      "1-1-0": {
+        "quote": "I have had the pleasure of knowing Testa Marketing since its beginnings, and it has always been an enthusiastic, creative, and highly sincere agency. Testa Marketing reflects the entrepreneurial spirit, always innovating and achieving both their own ideals and those of their clients. Additionally, it is a company with high human standards.",
+        "company": "Motiva Contact Centers",
+        "position": ""
+      },
+      "1-1-1": {
+        "quote": "Very close, with great attention to detail and timely support to help my company develop its projects.",
+        "company": "Sintec Consulting",
+        "position": ""
+      }
+    }
+    },
+    "locations": {
+      "title": "Our Locations",
+      "description": "We have presence in several cities to serve you better."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Send us your information and we'll get in touch with you.",
+      "email": "Email",
+      "careers": {
+        "text": "Looking for job opportunities?",
+        "link": "View all vacancies"
+      },
+      "alert": "Successfully sent! We will contact you soon.",
+      "form": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "phonePlaceholder": "With area code",
+        "company": "Company",
+        "city": "City",
+        "state": "State",
+        "comments": "Comments",
+        "submit": "Submit",
+        "serviceInterest": "Service of Interest",
+      "selectOptions": "Select options",
+      "selectedCount": "{count} options selected",
+      "services": [
+        { "value": "Encuestador", "label": "CAPI (Face-to-face surveys)" },
+        { "value": "CATI", "label": "CATI (Telephone surveys)" },
+        { "value": "CAWI", "label": "CAWI (Web surveys)" },
+        { "value": "Mystery shopper", "label": "Mystery shopper" },
+        { "value": "Entrevista a profundidad", "label": "In-depth interviews" },
+        { "value": "Análisis de gabinete", "label": "Desk research" },
+        { "value": "Grupo focal", "label": "Focus groups / In-person triads" },
+        { "value": "Grupos focales / Triadas digitales", "label": "Focus groups / Digital triads" },
+        { "value": "Consultoría y Capacitación", "label": "Consulting and Training" },
+        { "value": "Elaboración de mapas", "label": "Map creation" },
+        { "value": "Maquila de encuestas a terceros", "label": "Third-party survey processing" },
+        { "value": "Pruebas de productos", "label": "Product testing" },
+        { "value": "Reclutamiento para terceros", "label": "Third-party recruitment" }
+      ]
+      },
+      "errors": {
+        "submission": "An error occurred while sending your data. Please try again.",
+        "validation": "Please complete all required fields before submitting."
+      }
+    },
+    "footer": {
+    "srOnly": "Footer",
+    "slogan": "Data that inspires, strategies that transform.",
+    "services": "Services",
+    "servicesList": [
+      { "name": "Face-to-Face Surveys (CAPI)", "href": "/#servicios" },
+      { "name": "Telephone Survey (CATI)", "href": "/#servicios" },
+      { "name": "Online Survey", "href": "/#servicios" },
+      { "name": "Mystery Shopper", "href": "/#servicios" },
+      { "name": "In-Depth Interviews", "href": "/#servicios" },
+      { "name": "Focus Groups", "href": "/#servicios" },
+      { "name": "Desk Research", "href": "/#servicios" },
+      { "name": "Consulting and Marketing", "href": "/#servicios" }
+    ],
+    "contact": "Contact",
+    "locations": [
+      { "name": "Mexico City", "href": "/#locations" },
+      { "name": "Guadalajara", "href": "/#locations" },
+      { "name": "Tijuana B.C.", "href": "/#locations" },
+      { "name": "Spain, Barcelona", "href": "/#locations" },
+      { "name": "San Diego", "href": "/#locations" }
+    ],
+    "company": "Company",
+    "companyLinks": [
+      { "name": "About Us", "href": "/#nosotros" },
+      { "name": "Join the team", "href": "/#contact" }
+    ],
+    "legal": "Legal",
+    "legalLinks": [
+      { "name": "Privacy Policy", "href": "/privacy-policy" }
+    ],
+    "copyright": "© 2025 Testa Marketing, Inc. All rights reserved."
+    },
+    "whatsapp": {
+    "desktopText": "Chat live with an executive on WhatsApp",
+    "mobileText": "Chat with Us",
+    "link": "https://wa.me/526642909090?text=Hello, I'm interested in learning about Testa Marketing."
+  }
+}

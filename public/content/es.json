@@ -1,0 +1,219 @@
+{
+    "hero": {
+      "experience": "Más de 20 años de experiencia",
+      "title": {
+        "main": "Investigación de",
+        "secondary": "Mercados"
+      },
+      "description": "Transformamos datos en soluciones para tu negocio. Entendemos los mercados y creamos estrategias efectivas para tener éxito en ellos.",
+      "quote": {
+        "text": "¿Te interesa una cotización? Contáctanos ahora.",
+        "button": "Solicitar Cotización"
+      },
+      "team": {
+        "text": "¿Interesado en unirte a nuestro equipo?",
+        "link": "Súmate al equipo"
+      },
+      "member": "Miembro de:",
+      "video": "Ver nuestro video informativo"
+    },
+    "services": {
+    "mainTitle": "¿Qué es una agencia de investigación de mercados?",
+    "mainDescription": "Es una firma enfocada en generar y analizar información para que las empresas puedan tomar mejores decisiones. Mientras la publicidad es el \"lado emocional\" de la mercadotecnia, la investigación de mercados es el \"lado racional\" del marketing.",
+    "servicesTitle": "Servicios",
+    "servicesDescription": "Nuestra ventaja es la capacidad de traducir las gráficas y números en estrategias efectivas para nuestros clientes. La variedad de sectores que hemos atendido durante más de 20 años hablan por nosotros y a continuación te comentamos sobre nuestros servicios.",
+    "items": {
+      "1": {
+        "name": "Encuestas Cara a Cara (CAPI)",
+        "description": "Es una de las técnicas cuantitativas más usadas en marketing, se llevan a cabo en vivienda, plazas comerciales y puntos de aforo poblacional. Permite obtener información detallada y precisa directamente de los encuestados."
+      },
+      "2": {
+        "name": "Encuesta Telefónica (CATI)", 
+        "description": "Mejor conocida como Computer Assisted Telephone Interviewing (CATI), es un método ágil, preciso y económico de investigación de mercados. Facilita la recopilación rápida de datos de una amplia muestra geográfica."
+      },
+      "3": {
+        "name": "Encuesta online",
+        "description": "Las Encuestas por Email o CAWI (Computer Assisted Web Interview) es la misma técnica utilizada en CAPI o CATI solo que a través de links personalizados para que las personas respondan los cuestionarios. Ofrece flexibilidad y comodidad para los participantes, aumentando la tasa de respuesta."
+      },
+      "4": {
+        "name": "Mystery Shopper",
+        "description": "Un agente profesional se hace pasar por un consumidor para analizar la conducta, comportamiento y actitudes de los empleados en una empresa. Esta técnica proporciona una visión única de la experiencia real del cliente."
+      },
+      "5": {
+        "name": "Entrevistas a Profundidad",
+        "description": "Es una técnica cualitativa muy específica, pues busca recolectar información de personas con perfiles definidos y generalmente con agendas muy saturadas. Permite obtener insights valiosos y detallados sobre temas complejos."
+      },
+      "6": {
+        "name": "Grupos Focales",
+        "description": "Los grupos focales o focus groups pueden ser ONLINE o PRESENCIALES. Son una técnica cualitativa muy solicitada por empresas que lanzarán nuevos productos o campañas publicitarias. Permiten explorar las percepciones y opiniones de un grupo diverso de manera interactiva."
+      },
+      "7": {
+        "name": "Estudios de Gabinete",
+        "description": "INEGI, bases de datos específicas, estudios especializados y nuestros vínculos con diversos centros universitarios nos dan un menú muy amplio de fuentes de calidad para fortalecer nuestros estudios de mercado. Esta metodología ofrece una visión integral basada en datos confiables y actualizados."
+      },
+      "8": {
+        "name": "Consultoría y Marketing",
+        "description": "El mundo cambió y el marketing también. ¿Estás listo? Podemos ayudarte con tus planes y estrategias de marketing. Nuestro enfoque personalizado se adapta a las necesidades únicas de tu negocio en el entorno digital actual."
+      }
+    }
+    },
+    "logoCloud": {
+      "title": "Algunos de nuestros clientes",
+      "description": "Más de 20 años en el mercado y las marcas que hemos atendido son el respaldo que habla de nuestra experiencia y confianza.",
+      "cta": {
+        "primary": "Solicitar cotización",
+        "secondary": "Contáctanos"
+      }
+    },
+    "team": {
+      "title": "El Equipo",
+      "description": "Mucho talento se ha formado en nuestra empresa durante más de 20 años, aquí parte de nuestro equipo coordinador. A ellos se le suma más de 100 encuestadores en todo México.",
+      "cv": "Ver CV",
+      "roles": {
+        "director": "Director General",
+        "countryManager": "Country Manager (España)",
+        "quantitative": "Análisis Cuantitativo",
+        "projectManager": "Project Manager",
+        "admin": "Administración",
+        "qualitative": "Análisis Cualitativo",
+        "operations": "Operaciones"
+      }
+    },
+    "testimonials": {
+    "subtitle": "Testimoniales",
+    "title": "Lo que nuestros clientes dicen",
+    "featured": {
+      "quote": "Es una agencia que puede ayudar a brindar soluciones a tu empresa de una manera innovadora. Muy buena atención.",
+      "company": "Chevron",
+      "position": ""
+    },
+    "items": {
+      "0-0-0": {
+        "quote": "Son productivos, creativos, propositivos, sencillos, eficientes, atentos, colaborativos, abiertos, flexibles, dedicados, serviciales, ejecutivos, profesionales y puntuales.",
+        "company": "Consejo de Desarrollo de Tijuana",
+        "position": ""
+      },
+      "0-0-1": {
+        "quote": "En el tiempo que tengo el gusto de conocer a Testa Marketing, siempre se han desempeñado con profesionalismo. Estamos contentos por el servicio brindado a nuestras compañías en materia de publicidad; se destaca por ser una agencia con gran conocimiento de medios. Además, sin lugar a dudas, es una agencia líder en nuestra comunidad, con un gran sentido de responsabilidad social.",
+        "company": "Grupo la Mesa",
+        "position": ""
+      },
+      "0-1-0": {
+        "quote": "Es una empresa con gran experiencia en el levantamiento de encuestas, da seguimiento continuo al cliente y agiliza tiempos para entregar antes de la fecha pactada.",
+        "company": "Atlantia Search",
+        "position": ""
+      },
+      "0-1-1": {
+        "quote": "Dan muy buen servicio, flexibilidad para atender los requerimientos y entrega en tiempo y forma.",
+        "company": "Polilat",
+        "position": ""
+      },
+      "1-0-0": {
+        "quote": "Excelente, muy proactivos.",
+        "company": "GSE",
+        "position": ""
+      },
+      "1-0-1": {
+        "quote": "Testa Marketing es el aliado estratégico ideal para identificar de manera práctica las necesidades del mercado. Realmente dominan con talento la investigaciones de mercado y son sumamente acertados en la manera de aprovechar los resultados obtenidos en favor del negocio.",
+        "company": "Nuevo Gas",
+        "position": ""
+      },
+      "1-1-0": {
+        "quote": "Tengo el gusto de conocer a Testa Marketing desde sus inicios y siempre ha sido una agencia entusiasta, creativa y sumamente sincera. Testa Marketing es el reflejo del espíritu emprendedor, siempre innovando y logrando los ideales tanto propios como los de sus clientes. Además, es una empresa con altos estándares humanos.",
+        "company": "Motiva Contact Centers",
+        "position": ""
+      },
+      "1-1-1": {
+        "quote": "Muy cercana, con gran atención al detalle y con apoyo oportuno para ayudar a mi empresa a desarrollar sus proyectos.",
+        "company": "Sintec Consulting",
+        "position": ""
+      }
+    }
+    },
+    "locations": {
+      "title": "Nuestras Ubicaciones",
+      "description": "Contamos con presencia en varias ciudades para atenderte mejor."
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "description": "Envíanos tus datos y nosotros nos pondremos en contacto contigo.",
+      "email": "Correo electrónico",
+      "careers": {
+        "text": "¿Buscas oportunidades laborales?",
+        "link": "Ver todas las vacantes"
+      },
+      "alert": "¡Enviado con éxito! Nos pondremos en contacto contigo.",
+      "form": {
+        "firstName": "Nombre",
+        "lastName": "Apellido",
+        "email": "Correo Electrónico",
+        "phone": "Teléfono",
+        "phonePlaceholder": "Con lada",
+        "company": "Empresa",
+        "city": "Ciudad",
+        "state": "Estado",
+        "comments": "Comentarios",
+        "submit": "Completar",
+        "serviceInterest": "Servicio de interés",
+      "selectOptions": "Seleccione opciones",
+      "selectedCount": "{count} opciones seleccionadas",
+      "services": [
+        { "value": "Encuestador", "label": "CAPI (Encuestas cara a cara)" },
+        { "value": "CATI", "label": "CATI (Encuestas telefónicas)" },
+        { "value": "CAWI", "label": "CAWI (Encuestas vía web)" },
+        { "value": "Mystery shopper", "label": "Mystery shopper" },
+        { "value": "Entrevista a profundidad", "label": "Entrevista a profundidad" },
+        { "value": "Análisis de gabinete", "label": "Análisis de gabinete" },
+        { "value": "Grupo focal", "label": "Grupos focales / Triadas presenciales" },
+        { "value": "Grupos focales / Triadas digitales", "label": "Grupos focales / Triadas digitales" },
+        { "value": "Consultoría y Capacitación", "label": "Consultoría y Capacitación" },
+        { "value": "Elaboración de mapas", "label": "Elaboración de mapas" },
+        { "value": "Maquila de encuestas a terceros", "label": "Maquila de encuestas a terceros" },
+        { "value": "Pruebas de productos", "label": "Pruebas de productos" },
+        { "value": "Reclutamiento para terceros", "label": "Reclutamiento para terceros" }
+      ]
+      },
+      "errors": {
+      "submission": "Ocurrió un error al enviar tus datos. Por favor, inténtalo de nuevo.",
+      "validation": "Por favor, completa todos los campos requeridos antes de enviar."
+    }
+    },
+    "footer": {
+    "srOnly": "Pie de página",
+    "slogan": "Datos que inspiran, estrategias que transforman.",
+    "services": "Servicios",
+    "servicesList": [
+      { "name": "Encuestas Cara a Cara (CAPI)", "href": "/#servicios" },
+      { "name": "Encuesta Telefónica (CATI)", "href": "/#servicios" },
+      { "name": "Encuesta Online", "href": "/#servicios" },
+      { "name": "Mystery Shopper", "href": "/#servicios" },
+      { "name": "Entrevistas a Profundidad", "href": "/#servicios" },
+      { "name": "Grupos Focales", "href": "/#servicios" },
+      { "name": "Estudios de Gabinete", "href": "/#servicios" },
+      { "name": "Consultoría y Marketing", "href": "/#servicios" }
+    ],
+    "contact": "Contacto",
+    "locations": [
+      { "name": "Ciudad de México", "href": "/#locations" },
+      { "name": "Guadalajara", "href": "/#locations" },
+      { "name": "Tijuana B.C.", "href": "/#locations" },
+      { "name": "España, Barcelona", "href": "/#locations" },
+      { "name": "San Diego", "href": "/#locations" }
+    ],
+    "company": "Empresa",
+    "companyLinks": [
+      { "name": "Nosotros", "href": "/#nosotros" },
+      { "name": "Súmate al equipo", "href": "/#contact" }
+    ],
+    "legal": "Legal",
+    "legalLinks": [
+      { "name": "Términos de servicio", "href": "/privacy-policy" }
+    ],
+    "copyright": "© 2025 Testa Marketing, Inc. Todos los derechos reservados."
+    },
+    "whatsapp": {
+    "desktopText": "Chatea en vivo con un ejecutivo en WhatsApp",
+    "mobileText": "Chatea con Nosotros",
+    "link": "https://wa.me/526642909090?text=Hola, me interesa conocer sobre Testa Marketing."
+  }
+  }

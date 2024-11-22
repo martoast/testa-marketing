@@ -2,8 +2,8 @@
   <div id="nosotros" class="bg-white py-24 sm:py-32">
     <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
       <div class="max-w-2xl">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">El Equipo</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">Mucho talento se ha formado en nuestra empresa durante más de 20 años, aquí parte de nuestro equipo coordinador. A ellos se le suma más de 100 encuestadores en todo México.</p>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ store.text?.team?.title }}</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">{{ store.text?.team?.description }}</p>
       </div>
       <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
         <li v-for="(person, index) in people" :key="person.name">
@@ -14,7 +14,7 @@
               </div>
               <NuxtImg 
                 :src="person.imageUrl"
-                alt=""
+                :alt="person.name"
                 class="h-16 w-16 rounded-full object-cover"
                 width="64"
                 height="64"
@@ -23,10 +23,10 @@
             </div>
             <div>
               <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">{{ person.name }}</h3>
-              <p class="text-sm font-semibold leading-6 text-primary">{{ person.role }}</p>
+              <p class="text-sm font-semibold leading-6 text-primary">{{ store.text?.team?.roles[person.roleKey] }}</p>
               <div class="mt-2 flex gap-x-3">
                 <a v-if="person.cvUrl" :href="person.cvUrl" class="text-gray-400 hover:text-gray-500" target="_blank">
-                  <span class="sr-only">CV</span>
+                  <span class="sr-only">{{ store.text?.team?.cv }}</span>
                   <svg class="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
                     <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd" />
@@ -48,47 +48,50 @@
 </template>
 
 <script setup>
+import { useLanguageStore } from '~/store/language'
+const store = useLanguageStore()
+
 const people = [
   {
     name: 'Ariosto Manrique',
-    role: 'Director General',
+    roleKey: 'director',
     imageUrl: '/ariosto-profile.webp',
     cvUrl: 'https://testamarketing.com/storage/files/CVAriostoESP.pdf',
     linkedinUrl: 'https://www.linkedin.com/in/ariostomanrique/',
   },
   {
     name: 'José María Verdaguer',
-    role: 'Country Manager (España)',
+    roleKey: 'countryManager',
     imageUrl: '/team2.webp',
     linkedinUrl: 'https://www.linkedin.com/in/josep-mar%C3%ADa-verdaguer-l%C3%B3pez-4a15078/',
   },
   {
     name: 'Moises Espitia',
-    role: 'Análisis Cuantitativo',
+    roleKey: 'quantitative',
     imageUrl: '/team1.webp',
     linkedinUrl: 'https://www.linkedin.com/in/moises-espitia/',
   },
   {
     name: 'Ariana Chan',
-    role: 'Project Manager',
+    roleKey: 'projectManager',
     imageUrl: '/ariana.webp',
     linkedinUrl: "https://www.linkedin.com/in/ariana-chan-a52157251",
   },
   {
     name: 'Ana González',
-    role: 'Administración',
+    roleKey: 'admin',
     imageUrl: '/ana.webp',
     linkedinUrl: 'https://www.linkedin.com/in/ana-gonz%C3%A1lez-714917239',
   },
   {
     name: 'Luis Carlos',
-    role: 'Análisis Cualitativo',
+    roleKey: 'qualitative',
     imageUrl: '/LuisCarlos.webp',
     linkedinUrl: null,
   },
   {
     name: 'Christian Becerra',
-    role: 'Operaciones',
+    roleKey: 'operations',
     imageUrl: '/christian.webp',
     linkedinUrl: null,
   },

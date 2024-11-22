@@ -6,20 +6,19 @@
       >
         <div class="mx-auto w-full max-w-xl lg:mx-0">
           <h2 class="text-3xl font-bold tracking-tight text-gray-900">
-            Algunos de nuestros clientes
+            {{ store.text?.logoCloud?.title }}
           </h2>
           <p class="mt-6 text-lg leading-8 text-gray-600">
-            Más de 20 años en el mercado y las marcas que hemos atendido son el
-            respaldo que habla de nuestra experiencia y confianza.
+            {{ store.text?.logoCloud?.description }}
           </p>
           <div class="mt-8 flex items-center gap-x-6">
             <a
               href="/#contact"
               class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-              >Solicitar cotización</a
+              >{{ store.text?.logoCloud?.cta?.primary }}</a
             >
             <a href="/#contact" class="text-sm font-semibold text-gray-900"
-              >Contáctanos <span aria-hidden="true">&rarr;</span></a
+              > {{ store.text?.logoCloud?.cta?.secondary }} <span aria-hidden="true">&rarr;</span></a
             >
           </div>
         </div>
@@ -200,3 +199,8 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useLanguageStore } from '~/store/language'
+const store = useLanguageStore()
+</script>

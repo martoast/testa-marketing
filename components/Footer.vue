@@ -1,66 +1,70 @@
 <template>
-    <footer id="footer" class="bg-white" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" class="sr-only">Footer</h2>
-      <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div class="space-y-4 text-center md:text-start">
-            <img class="h-28 mx-auto md:mx-0" src="/testa-main-logo.svg" alt="Company name" />
-            <p class="text-sm leading-6 text-gray-600">Datos que inspiran, estrategias que transforman.</p>
-            <div class="flex justify-center md:justify-start space-x-6">
-              <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
-                <span class="sr-only">{{ item.name }}</span>
-                <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-              </a>
-            </div>
-          </div>
-          <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div class="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 class="text-sm font-semibold leading-6 text-gray-900">Servicios</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li v-for="item in navigation.servicios " :key="item.name">
-                    <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="mt-10 md:mt-0">
-                <h3 class="text-sm font-semibold leading-6 text-gray-900">Contacto</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li v-for="item in navigation.contact" :key="item.name">
-                    <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 class="text-sm font-semibold leading-6 text-gray-900">Empresa</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li v-for="item in navigation.empresa" :key="item.name">
-                    <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="mt-10 md:mt-0">
-                <h3 class="text-sm font-semibold leading-6 text-gray-900">Legal</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li v-for="item in navigation.legal" :key="item.name">
-                    <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+  <footer id="footer" class="bg-white" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">{{ store.text?.footer?.srOnly }}</h2>
+    <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div class="space-y-4 text-center md:text-start">
+          <img class="h-28 mx-auto md:mx-0" src="/testa-main-logo.svg" alt="Testa Marketing" />
+          <p class="text-sm leading-6 text-gray-600">{{ store.text?.footer?.slogan }}</p>
+          <div class="flex justify-center md:justify-start space-x-6">
+            <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">{{ item.name }}</span>
+              <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+            </a>
           </div>
         </div>
-        <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
-          <p class="text-xs leading-5 text-gray-500">&copy; 2025 Testa Marketing, Inc. All rights reserved.</p>
+        <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-sm font-semibold leading-6 text-gray-900">{{ store.text?.footer?.services }}</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li v-for="service in store.text?.footer?.servicesList" :key="service.name">
+                  <a :href="service.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ service.name }}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-10 md:mt-0">
+              <h3 class="text-sm font-semibold leading-6 text-gray-900">{{ store.text?.footer?.contact }}</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li v-for="location in store.text?.footer?.locations" :key="location.name">
+                  <a :href="location.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ location.name }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-sm font-semibold leading-6 text-gray-900">{{ store.text?.footer?.company }}</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li v-for="item in store.text?.footer?.companyLinks" :key="item.name">
+                  <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-10 md:mt-0">
+              <h3 class="text-sm font-semibold leading-6 text-gray-900">{{ store.text?.footer?.legal }}</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li v-for="item in store.text?.footer?.legalLinks" :key="item.name">
+                  <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-  </template>
+      <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
+        <p class="text-xs leading-5 text-gray-500">{{ store.text?.footer?.copyright }}</p>
+      </div>
+    </div>
+  </footer>
+</template>
   
   <script setup>
   import { defineComponent, h } from 'vue'
+
+  import { useLanguageStore } from '~/store/language'
+
+const store = useLanguageStore()
   
   const navigation = {
   servicios: [

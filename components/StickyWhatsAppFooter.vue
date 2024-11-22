@@ -4,14 +4,14 @@
       <div class="container mx-auto px-4">
         <div class="flex justify-center items-center">
           <div class="w-full md:w-7/12 flex items-center">
-            <a href="https://wa.me/526642909090?text=Hola, me interesa conocer sobre Testa Marketing." target="_blank" class="flex items-center">
-              <p class="m-0 text-white font-bold hidden md:block hover:underline">Chatea en vivo con un ejecutivo en WhatsApp</p>
-              <p class="m-0 text-white font-bold block md:hidden underline">Chatea con Nosotros</p>
+            <a :href="store.text?.whatsapp?.link" target="_blank" class="flex items-center">
+              <p class="m-0 text-white font-bold hidden md:block hover:underline">{{ store.text?.whatsapp?.desktopText }}</p>
+              <p class="m-0 text-white font-bold block md:hidden underline">{{ store.text?.whatsapp?.mobileText }}</p>
             </a>
           </div>
           <div class="w-full md:w-5/12 flex justify-end items-center">
             <div class="h-full py-3 px-4 flex items-center">
-              <a href="https://wa.me/526642909090?text=Hola, me interesa conocer sobre Testa Marketing." target="_blank" class="text-white mr-4">
+              <a :href="store.text?.whatsapp?.link" target="_blank" class="text-white mr-4">
                 <img src="/whatsapp.svg" alt="WhatsApp" class="h-10 w-auto">
               </a>
               <button @click="closeFooter" class="bg-yellow-500 text-white rounded-full p-2">
@@ -29,6 +29,9 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useLanguageStore } from '~/store/language'
+
+const store = useLanguageStore()
 
 const isVisible = ref(false)
 const isClosed = ref(false)
@@ -41,7 +44,6 @@ const closeFooter = () => {
 
 const handleScroll = () => {
   const scrollPosition = window.scrollY + window.innerHeight
-  
   if (window.scrollY > heroHeight.value && scrollPosition < footerTop.value) {
     isVisible.value = true
   } else {
@@ -53,14 +55,8 @@ onMounted(() => {
   const heroElement = document.getElementById('hero')
   const footerElement = document.getElementById('footer')
 
-  if (heroElement) {
-    heroHeight.value = heroElement.offsetHeight
-  }
-
-  if (footerElement) {
-    footerTop.value = footerElement.offsetTop
-  }
-
+  if (heroElement) heroHeight.value = heroElement.offsetHeight
+  if (footerElement) footerTop.value = footerElement.offsetTop
 
   window.addEventListener('scroll', handleScroll)
 })
