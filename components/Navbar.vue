@@ -196,7 +196,7 @@ import {
   MenuItem,
   MenuItems,
 } from "@headlessui/vue";
-import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
+import { Bars3Icon, XMarkIcon, ChevronDownIcon, CheckIcon } from "@heroicons/vue/24/outline";
 import { useLanguageStore } from "~/store/language";
 
 const store = useLanguageStore();
