@@ -6,7 +6,7 @@
     >
       <div class="flex flex-1 items-center">
         <div class="flex w-full items-center justify-between md:w-auto">
-          <a href="#">
+          <NuxtLink to="/">
             <span class="sr-only">Testa Market Research</span>
             <img
               src="/testa-main-logo.svg"
@@ -14,8 +14,79 @@
               class="h-16 w-auto sm:h-20"
               height="64"
             />
-          </a>
-          <div class="-mr-2 flex items-center md:hidden">
+          </NuxtLink>
+          <div class="-mr-2 flex items-center gap-3 md:hidden">
+            <!-- Mobile Language Selector (always visible) -->
+            <Menu as="div" class="relative">
+              <MenuButton
+                class="flex items-center gap-1.5 rounded-lg border-2 border-transparent bg-white px-2.5 py-1.5 text-sm hover:border-gray-200 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-hover focus:ring-offset-2"
+              >
+                <img
+                  :src="
+                    store.currentLanguage === 'es'
+                      ? '/es-flag.svg'
+                      : '/en-flag.svg'
+                  "
+                  class="h-5 w-5"
+                  :alt="store.currentLanguage === 'es' ? 'Spanish' : 'English'"
+                />
+                <ChevronDownIcon
+                  class="h-4 w-4 text-gray-400"
+                  aria-hidden="true"
+                />
+              </MenuButton>
+              <transition
+                enter-active-class="transition ease-out duration-100"
+                enter-from-class="transform opacity-0 scale-95"
+                enter-to-class="transform opacity-100 scale-100"
+                leave-active-class="transition ease-in duration-75"
+                leave-from-class="transform opacity-100 scale-100"
+                leave-to-class="transform opacity-0 scale-95"
+              >
+                <MenuItems
+                  class="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
+                >
+                  <MenuItem v-slot="{ active }">
+                    <button
+                      @click="store.setLanguage('es')"
+                      :class="[
+                        active ? 'bg-gray-50' : '',
+                        store.currentLanguage === 'es' ? 'bg-gray-50' : '',
+                        'flex items-center w-full px-4 py-2 text-sm text-gray-700',
+                      ]"
+                    >
+                      <img src="/es-flag.svg" class="h-5 w-5 mr-2" alt="Spanish" />
+                      <span class="flex-1">Español</span>
+                      <CheckIcon
+                        v-if="store.currentLanguage === 'es'"
+                        class="h-4 w-4 text-primary"
+                        aria-hidden="true"
+                      />
+                    </button>
+                  </MenuItem>
+                  <MenuItem v-slot="{ active }">
+                    <button
+                      @click="store.setLanguage('en')"
+                      :class="[
+                        active ? 'bg-gray-50' : '',
+                        store.currentLanguage === 'en' ? 'bg-gray-50' : '',
+                        'flex items-center w-full px-4 py-2 text-sm text-gray-700',
+                      ]"
+                    >
+                      <img src="/en-flag.svg" class="h-5 w-5 mr-2" alt="English" />
+                      <span class="flex-1">English</span>
+                      <CheckIcon
+                        v-if="store.currentLanguage === 'en'"
+                        class="h-4 w-4 text-primary"
+                        aria-hidden="true"
+                      />
+                    </button>
+                  </MenuItem>
+                </MenuItems>
+              </transition>
+            </Menu>
+
+            <!-- Mobile Menu Button -->
             <PopoverButton
               class="relative inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-hover"
             >
@@ -26,17 +97,17 @@
           </div>
         </div>
         <div class="hidden md:ml-10 md:block md:space-x-10">
-          <a
+          <NuxtLink
             v-for="item in navigation"
             :key="item.name"
-            :href="item.href"
+            :to="item.href"
             class="font-medium text-gray-500 hover:text-gray-900"
-            >{{ item.name }}</a
+            >{{ item.name }}</NuxtLink
           >
         </div>
       </div>
 
-      <!-- Language Selector -->
+      <!-- Desktop Language Selector -->
       <div class="hidden md:ml-6 md:flex md:items-center">
         <Menu as="div" class="relative ml-3">
           <div>
@@ -73,13 +144,12 @@
               class="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
             >
               <MenuItem v-slot="{ active }">
-                <a
-                  href="#"
-                  @click.prevent="store.setLanguage('es')"
+                <button
+                  @click="store.setLanguage('es')"
                   :class="[
                     active ? 'bg-gray-50' : '',
                     store.currentLanguage === 'es' ? 'bg-gray-50' : '',
-                    'flex items-center px-4 py-2 text-sm text-gray-700',
+                    'flex items-center w-full px-4 py-2 text-sm text-gray-700',
                   ]"
                 >
                   <img src="/es-flag.svg" class="h-5 w-5 mr-2" alt="Spanish" />
@@ -89,16 +159,15 @@
                     class="h-4 w-4 text-primary"
                     aria-hidden="true"
                   />
-                </a>
+                </button>
               </MenuItem>
               <MenuItem v-slot="{ active }">
-                <a
-                  href="#"
-                  @click.prevent="store.setLanguage('en')"
+                <button
+                  @click="store.setLanguage('en')"
                   :class="[
                     active ? 'bg-gray-50' : '',
                     store.currentLanguage === 'en' ? 'bg-gray-50' : '',
-                    'flex items-center px-4 py-2 text-sm text-gray-700',
+                    'flex items-center w-full px-4 py-2 text-sm text-gray-700',
                   ]"
                 >
                   <img src="/en-flag.svg" class="h-5 w-5 mr-2" alt="English" />
@@ -108,7 +177,7 @@
                     class="h-4 w-4 text-primary"
                     aria-hidden="true"
                   />
-                </a>
+                </button>
               </MenuItem>
             </MenuItems>
           </transition>
@@ -152,33 +221,14 @@
             </div>
           </div>
           <div class="space-y-1 px-2 pb-3 pt-2">
-            <a
+            <NuxtLink
               v-for="item in navigation"
               :key="item.name"
-              :href="item.href"
+              :to="item.href"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
             >
               {{ item.name }}
-            </a>
-            <!-- Mobile language selector -->
-            <div class="px-3 py-2">
-              <div class="flex items-center space-x-3">
-                <button
-                  @click="store.setLanguage('es')"
-                  class="flex items-center space-x-2 rounded-md px-2 py-1 hover:bg-gray-50"
-                >
-                  <img src="/es-flag.svg" class="h-5 w-5" alt="Spanish" />
-                  <span>Español</span>
-                </button>
-                <button
-                  @click="store.setLanguage('en')"
-                  class="flex items-center space-x-2 rounded-md px-2 py-1 hover:bg-gray-50"
-                >
-                  <img src="/en-flag.svg" class="h-5 w-5" alt="English" />
-                  <span>English</span>
-                </button>
-              </div>
-            </div>
+            </NuxtLink>
           </div>
         </div>
       </PopoverPanel>
