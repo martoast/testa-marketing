@@ -66,12 +66,6 @@ const people = [
     linkedinUrl: 'https://www.linkedin.com/in/josep-mar%C3%ADa-verdaguer-l%C3%B3pez-4a15078/',
   },
   {
-    name: 'Moises Espitia',
-    roleKey: 'quantitative',
-    imageUrl: '/team1.webp',
-    linkedinUrl: 'https://www.linkedin.com/in/moises-espitia/',
-  },
-  {
     name: 'Ariana Chan',
     roleKey: 'projectManager',
     imageUrl: '/ariana.webp',
